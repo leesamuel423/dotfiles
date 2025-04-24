@@ -31,6 +31,5 @@ source $ZSH/oh-my-zsh.sh
 
 # ---------> ALIASES <---------
 alias v="nvim"
-alias vi="nvim"
 alias t="tmux"
 
