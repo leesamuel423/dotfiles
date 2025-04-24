@@ -33,3 +33,7 @@ source $ZSH/oh-my-zsh.sh
 alias v="nvim"
 alias t="tmux"
 
+
+# ---------> OTHER CONFIGS <---------
+source <(fzf --zsh) # fzf
+eval "$(zoxide init zsh)"
