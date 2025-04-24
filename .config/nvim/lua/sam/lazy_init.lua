@@ -15,4 +15,3 @@ require("lazy").setup({
 	spec = "sam.lazy",
 	change_detection = { notify = false },
 })
-

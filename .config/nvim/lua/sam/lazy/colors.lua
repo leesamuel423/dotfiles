@@ -24,9 +24,9 @@
 
 -- NO CLOWN FIESTA --
 local M = {
-    "aktersnurra/no-clown-fiesta.nvim",
-    lazy = false,
-    priority = 1000,
+	"aktersnurra/no-clown-fiesta.nvim",
+	lazy = false,
+	priority = 1000,
 }
 
 -- OXOCARBON --
@@ -37,18 +37,17 @@ local M = {
 -- }
 
 function M.config()
-    -- vim.cmd.colorscheme "solarized-osaka"
-    -- vim.cmd.colorscheme "gruvbox"
-    -- require("oxocarbon").setup({
-    --   transparent=true
-    -- })
+	-- vim.cmd.colorscheme "solarized-osaka"
+	-- vim.cmd.colorscheme "gruvbox"
+	-- require("oxocarbon").setup({
+	--   transparent=true
+	-- })
 
-    require("no-clown-fiesta").setup({
-        transparent = true,
-    })
-    -- vim.cmd.colorscheme("oxocarbon")
-    -- vim.cmd.colorscheme("kanagawa-dragon")
+	require("no-clown-fiesta").setup({
+		transparent = true,
+	})
+	-- vim.cmd.colorscheme("oxocarbon")
+	-- vim.cmd.colorscheme("kanagawa-dragon")
 end
 
 return M
-

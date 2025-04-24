@@ -59,4 +59,3 @@ vim.opt.splitkeep = "cursor" -- Keep cursor in the same position when splitting
 -- Misc
 -- ========================================================================
 vim.opt.list = false -- Don't show hidden characters (tabs, EOL, etc.)
-

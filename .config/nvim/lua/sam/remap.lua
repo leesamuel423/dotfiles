@@ -18,7 +18,7 @@ map("n", "<C-q>", "gg<S-v>G", opts)
 
 -- Quickly source the current file
 map("n", "<leader><leader>", function()
-    vim.cmd("so")
+	vim.cmd("so")
 end)
 map("n", "<space><space>x", "<cmd>source %<CR>", { desc = "source current file" })
 map("n", "<space>x", ":.lua <CR>", { desc = "execute current line as lua" })
@@ -54,7 +54,6 @@ map("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "close current tab" })
 map("n", "L", "<cmd>tabn<CR>", { desc = "go to next tab" })
 map("n", "H", "<cmd>tabp<CR>", { desc = "go to prev tab" })
 
-
 -- ========================================================================
 -- Text Manipulation
 -- ========================================================================
@@ -69,7 +68,7 @@ map("v", "<", "<gv", opts, { desc = "indent left and keep selection" })
 
 -- Move cursor in insert mode
 map("i", "<C-h>", "<Left>", opts, { desc = "cursor left in insert mode" })
-map("i", "<C-l>", "<Right>", opts, {desc = "cursor right in insert mode" })
+map("i", "<C-l>", "<Right>", opts, { desc = "cursor right in insert mode" })
 
 -- ========================================================================
 -- Quick Actions & Plugins
@@ -91,5 +90,3 @@ map("n", "<leader>q", "<cmd>q<CR>", { desc = "quit" })
 -- map("n", "grn", vim.lsp.buf.rename, { desc = "rename symbol" })
 -- map("n", "gra", vim.lsp.buf.code_action, { desc = "code action" })
 -- map("n", "grr", vim.lsp.buf.references, { desc = "find references" })
-
-
