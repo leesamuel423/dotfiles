@@ -1,6 +1,5 @@
-# If you come from bash you might have to change your $PATH.
-#export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+# ---------> OH MY ZSH CONFIGURATION <---------
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
@@ -10,30 +9,31 @@ ZSH_THEME="simple"
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
 
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
-
-
-# Which plugins would you like to load?
+# ---------> PLUGINS <---------
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
+# Source Oh My Zsh
 source $ZSH/oh-my-zsh.sh
 
 # ---------> ALIASES <---------
+# Editor aliases
 alias v="nvim"
 alias t="tmux"
 
+# Application aliases
+alias ow-serve="cd ~/open-webui && source open-webui-env/bin/activate && open-webui serve"
 
 # ---------> OTHER CONFIGS <---------
-source <(fzf --zsh) # fzf
+# fzf config
+source <(fzf --zsh)
+
+# zoxide config
 eval "$(zoxide init zsh)"
+
+# ---------> LANGUAGE & DEVELOPMENT <---------
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
