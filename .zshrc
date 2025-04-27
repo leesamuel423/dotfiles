@@ -21,7 +21,16 @@ source $ZSH/oh-my-zsh.sh
 # Editor aliases
 alias v="nvim"
 alias t="tmux"
+alias cd="z"
 alias python="python3"
+alias gs="git status --short"
+alias gd="git diff"
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
+alias gu="git pull"
+alias gl="git log"
+
 
 # Application aliases
 alias ow-serve="cd ~/open-webui && source open-webui-env/bin/activate && open-webui serve"
