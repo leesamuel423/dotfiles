@@ -21,6 +21,7 @@ source $ZSH/oh-my-zsh.sh
 # Editor aliases
 alias v="nvim"
 alias t="tmux"
+alias python="python3"
 
 # Application aliases
 alias ow-serve="cd ~/open-webui && source open-webui-env/bin/activate && open-webui serve"

@@ -1,6 +1,7 @@
 require("sam.set")
 require("sam.remap")
 require("sam.lazy_init")
+require("sam.custom")
 
 -- Auto start showkeys toggle
 vim.cmd("ShowkeysToggle")
