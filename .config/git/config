@@ -1,3 +1,8 @@
+[user]
+    name = Samuel Lee
+    email = leesamuel423@gmail.com
+    signingkey = E64AB480C4ADABB7
+
 [commit]
     gpgSign = true
     template = ~/.config/git/template
