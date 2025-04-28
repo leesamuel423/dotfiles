@@ -24,6 +24,12 @@ brew install git
 brew install stow
 ```
 
+### GPG
+
+```bash
+brew install gpg
+```
+
 ### Open WebUI
 ```bash
 mkdir open-webui # in ~/
