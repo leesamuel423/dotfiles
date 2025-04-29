@@ -1,4 +1,4 @@
-open-webui/
 scripts/tutoring/students
 .env
+.config/nvim/todo.txt
 
