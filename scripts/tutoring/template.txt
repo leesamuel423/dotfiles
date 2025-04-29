@@ -1,0 +1,13 @@
+# Student Name
+
+# Info: Add Student Info Here
+
+# Parent Contact: Phone number here (or Kakao)
+
+# Month
+date | $charge | update
+date | $charge | update
+etc
+
+# Archived
+Put months that have passed in here
