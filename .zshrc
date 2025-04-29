@@ -30,6 +30,7 @@ alias gc="git commit"
 alias gp="git push"
 alias gu="git pull"
 alias gl="git log"
+alias opengh="./scripts/open-gh.sh"
 
 
 # Application aliases
