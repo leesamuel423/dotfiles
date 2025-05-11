@@ -221,10 +221,6 @@ run = 'move-node-to-workspace 0'
 if.app-id = 'com.hnc.Discord'
 run = 'move-node-to-workspace 1'
 
-[[on-window-detected]] #Legcord
-if.app-id = 'com.legcord.Legcord'
-run = 'move-node-to-workspace 1'
-
 [[on-window-detected]] # Slack
 if.app-id = 'com.tinyspeck.slackmacgap'
 run = 'move-node-to-workspace 2'
@@ -233,6 +229,34 @@ run = 'move-node-to-workspace 2'
 if.app-id = 'com.readdle.smartemail-Mac'
 run = 'move-node-to-workspace 3'
 
+[[on-window-detected]] # ClickUp
+if.app-id = 'com.clickup.desktop-app'
+run = 'move-node-to-workspace 4'
+
+[[on-window-detected]] # Asana
+if.app-id = 'com.electron.asana'
+run = 'move-node-to-workspace 4'
+
+[[on-window-detected]] # Linear
+if.app-id = 'com.electron.asana'
+run = 'move-node-to-workspace 4'
+
 [[on-window-detected]] # Spotify
 if.app-id = 'com.spotify.client'
 run = 'move-node-to-workspace 9'
+
+[[on-window-detected]] # Yaak
+if.app-id = 'app.yaak.desktop'
+run = 'move-node-to-workspace Z'
+
+[[on-window-detected]] # Postman
+if.app-id = 'com.postmanlabs.mac'
+run = 'move-node-to-workspace Z'
+
+[[on-window-detected]] # Docker Desktop
+if.app-id = 'com.electron.dockerdesktop'
+run = 'move-node-to-workspace X'
+
+[[on-window-detected]] # OrbStack
+if.app-id = 'dev.kdrag0n.MacVirt'
+run = 'move-node-to-workspace X'
