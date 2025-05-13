@@ -7,7 +7,7 @@ function M.config()
 		dev = true,
 		maxkeys = 5,
 		-- excluded_modes = { "i" },
-		position = "top-right",
+		position = "bottom-right",
 	})
 end
 
