@@ -51,6 +51,12 @@ export NVM_DIR="$HOME/.nvm"
 
 # go
 export PATH=$PATH:~/go/bin
+
 # java
 export PATH="$(brew --prefix)/opt/openjdk@17/bin:$PATH"
 
+# python
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
