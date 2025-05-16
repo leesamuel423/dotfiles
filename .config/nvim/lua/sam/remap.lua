@@ -77,16 +77,28 @@ map("i", "<C-l>", "<Right>", opts, { desc = "cursor right in insert mode" })
 -- Quick quit
 map("n", "<leader>q", "<cmd>q<CR>", { desc = "quit" })
 
--- Formatter
--- vim.keymap.set("n", "<leader>f", function()
---     require("conform").format({ bufnr = 0 })
--- end)
-
 -- ========================================================================
 -- LSP & Diagnostics
 -- ========================================================================
 
 -- Commented out LSP mappings
--- map("n", "grn", vim.lsp.buf.rename, { desc = "rename symbol" })
--- map("n", "gra", vim.lsp.buf.code_action, { desc = "code action" })
--- map("n", "grr", vim.lsp.buf.references, { desc = "find references" })
+map("n", "grn", vim.lsp.buf.rename, { desc = "rename symbol" })
+map("n", "gra", vim.lsp.buf.code_action, { desc = "code action" })
+map("n", "grr", vim.lsp.buf.references, { desc = "find references" })
+
+-- ========================================================================
+-- Telescope
+-- ========================================================================
+local builtin = require("telescope.builtin")
+map("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
+map("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
+map("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
+map("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
+
+-- ========================================================================
+-- TMUX-navigator
+-- ========================================================================
+map("n", "C-h", ":TmuxNavigateLeft<CR>")
+map("n", "C-j", ":TmuxNavigateDown<CR>")
+map("n", "C-k", ":TmuxNavigateUp<CR>")
+map("n", "C-l", ":TmuxNavigateRight<CR>")
