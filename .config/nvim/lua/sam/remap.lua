@@ -94,3 +94,11 @@ map("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
 map("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
 map("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
 map("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
+
+-- ========================================================================
+-- TMUX-navigator
+-- ========================================================================
+map("n", "C-h", ":TmuxNavigateLeft<CR>")
+map("n", "C-j", ":TmuxNavigateDown<CR>")
+map("n", "C-k", ":TmuxNavigateUp<CR>")
+map("n", "C-l", ":TmuxNavigateRight<CR>")

@@ -1,6 +1,7 @@
 ---@type vim.lsp.Config
 return {
 	cmd = { "typescript-language-server", "--stdio" },
+	root_markers = { "tsconfig.json", "jsconfig.json", "package.json", ".git" },
 	filetypes = {
 		"javascript",
 		"javascriptreact",
@@ -9,6 +10,5 @@ return {
 		"typescriptreact",
 		"typescript.tsx",
 	},
-	root_markers = { "tsconfig.json", "jsconfig.json", "package.json", ".git" },
 	workspace_required = true,
 }
