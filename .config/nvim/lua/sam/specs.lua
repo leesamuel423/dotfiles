@@ -1,5 +1,7 @@
 LAZY_PLUGIN_SPEC = {}
 
+---Adds a plugin import specification to the global LAZY_PLUGIN_SPEC table.
+---@param item string The module path of the plugin to import.
 local function spec(item)
 	table.insert(LAZY_PLUGIN_SPEC, { import = item })
 end
