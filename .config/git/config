@@ -16,6 +16,19 @@
     renames = copies  # detect copies as renames in diffs
     interHunkContext = 10  # merge near hunks in diffs
 
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    navigate = true # use n and N to move between diff sections
+    dark = true
+
+[merge]
+    conflictstyle = zdiff3
+
 [log]
     abbrevCommit = true  # short commits
     graphColors = blue,yellow,cyan,magenta,green,red
