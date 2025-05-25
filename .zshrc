@@ -22,6 +22,7 @@ source $ZSH/oh-my-zsh.sh
 alias v="nvim"
 alias t="tmux"
 alias cd="z"
+alias ls="eza"
 alias python="python3"
 alias gs="git status --short"
 alias gd="git diff"
