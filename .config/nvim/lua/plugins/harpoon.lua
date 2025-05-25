@@ -19,21 +19,6 @@ return {
 			vim.keymap.set("n", "<leader>ha", function()
 				harpoon:list():add()
 			end, opts)
-			vim.keymap.set("n", "<C-S-N>", function()
-				harpoon:list():next()
-			end, opts)
-			vim.keymap.set("n", "<C-S-P>", function()
-				harpoon:list():prev()
-			end, opts)
-			vim.keymap.set("n", "<C-N>", function()
-				harpoon:list():select(1)
-			end, opts)
-			vim.keymap.set("n", "<C-E>", function()
-				harpoon:list():select(2)
-			end, opts)
-			vim.keymap.set("n", "<C-I>", function()
-				harpoon:list():select(3)
-			end, opts)
 		end,
 	},
 }
