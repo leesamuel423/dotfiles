@@ -32,6 +32,8 @@ alias gp="git push"
 alias gu="git pull"
 alias gl="git log"
 alias opengh="./scripts/open-gh.sh"
+alias tree='tree "$@" | tee >(pbcopy)'
+alias treeclean='tree -I "node_modules|__pycache__|.git|dist|build|*.pyc" "$@" | tee >(pbcopy)'
 
 
 # Application aliases
