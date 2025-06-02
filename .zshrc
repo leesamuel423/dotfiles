@@ -22,7 +22,7 @@ source $ZSH/oh-my-zsh.sh
 alias v="nvim"
 alias t="tmux"
 alias cd="z"
-alias ls="eza"
+alias ls="eza -la"
 alias python="python3"
 alias gs="git status --short"
 alias gd="git diff"
@@ -34,6 +34,7 @@ alias gl="git log"
 alias opengh="./scripts/open-gh.sh"
 alias tree='tree "$@" | tee >(pbcopy)'
 alias treeclean='tree -I "node_modules|__pycache__|.git|dist|build|*.pyc" "$@" | tee >(pbcopy)'
+alias cat="bat"
 
 
 # Application aliases
@@ -63,3 +64,4 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
