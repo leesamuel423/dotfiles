@@ -12,7 +12,7 @@ ZSH_THEME="simple"
 # ---------> PLUGINS <---------
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting you-should-use)
 
 # Source Oh My Zsh
 source $ZSH/oh-my-zsh.sh
@@ -46,6 +46,9 @@ source <(fzf --zsh)
 
 # zoxide config
 eval "$(zoxide init zsh)"
+
+# thefuck config
+eval $(thefuck --alias)
 
 # ---------> LANGUAGE & DEVELOPMENT <---------
 # nvm
