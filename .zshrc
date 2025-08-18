@@ -35,6 +35,7 @@ alias opengh="./scripts/open-gh.sh"
 alias tree='tree "$@" | tee >(pbcopy)'
 alias treeclean='tree -I "node_modules|__pycache__|.git|dist|build|*.pyc" "$@" | tee >(pbcopy)'
 alias cat="bat"
+alias makef="make -f ~/Makefile"
 
 
 # Application aliases
