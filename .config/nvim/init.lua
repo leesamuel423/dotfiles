@@ -1,7 +1,0 @@
-require("sam.specs")
-require("sam.lazy")
-require("sam.set")
-require("sam.remap")
-require("sam.autocmds")
-require("sam.lsp")
-require("sam.status_line")
