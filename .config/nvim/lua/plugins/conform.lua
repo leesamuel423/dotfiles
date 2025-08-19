@@ -20,6 +20,7 @@ return {
 				java = { "google-java-format" },
 				sh = { "beautysh" },
 				json = { "jq" },
+				rust = { "rustfmt" },
 			},
 			format_on_save = {
 				-- These options will be passed to conform.format()

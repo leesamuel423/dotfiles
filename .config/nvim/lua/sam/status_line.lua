@@ -116,7 +116,7 @@ local function vcs()
 	end
 	return table.concat({
 		"[",
-		" ",
+		"git:",
 		head,
 		added,
 		changed,
