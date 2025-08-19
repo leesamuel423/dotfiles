@@ -10,6 +10,7 @@ SCRIPTS_DIR := $(HOME_DIR)/scripts
 help:
 	@echo "Available targets:"
 	@echo "  commit            - Git commit with custom date (runs in current directory)"
+	@echo "  push              - Push all unpushed commits across all branches"
 	@echo "  nvim-switch       - Switch nvim configurations"
 	@echo "  open-gh           - Open GitHub repository"
 	@echo "  quartz-dev        - Start Quartz development server"
@@ -26,6 +27,11 @@ help:
 .PHONY: commit
 commit:
 	@$(SCRIPTS_DIR)/commit.sh
+
+# Git push script - pushes all unpushed commits
+.PHONY: push
+push:
+	@$(SCRIPTS_DIR)/push.sh
 
 .PHONY: nvim-switch
 nvim-switch:
