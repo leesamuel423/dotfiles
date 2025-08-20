@@ -25,6 +25,7 @@ spec("plugins.indentline")
 spec("plugins.harpoon")
 spec("plugins.whichkey")
 spec("plugins.telescope")
+spec("plugins.nvim-jdtls")
 
 require("lazy").setup({
 	spec = LAZY_PLUGIN_SPEC,
