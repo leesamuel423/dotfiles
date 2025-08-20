@@ -49,6 +49,15 @@ function M.config()
 			{ "<leader>tt", desc = "New tab" },
 			{ "<leader>tx", desc = "Close tab" },
 			
+			-- Git group (Fugitive)
+			{ "<space>g", group = "git" },
+			{ "<space>gs", desc = "Git status" },
+			{ "<space>gd", desc = "Git diff (split)" },
+			{ "<space>gp", desc = "Git push" },
+			{ "<space>gl", desc = "Git log" },
+			{ "<space>gb", desc = "Git blame" },
+			{ "<space>gP", desc = "Git pull" },
+			
 			-- Space mappings
 			{ "<space><space>x", desc = "Source current file" },
 			{ "<space>x", desc = "Execute lua" },

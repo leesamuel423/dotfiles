@@ -27,6 +27,16 @@ spec("plugins.whichkey")
 spec("plugins.telescope")
 spec("plugins.nvim-jdtls")
 spec("plugins.blink-cmp")
+spec("plugins.mini")
+spec("plugins.autopairs")
+spec("plugins.colors")
+spec("plugins.fugitive")
+spec("plugins.peek")
+spec("plugins.tmux-navigator")
+spec("plugins.todocomments")
+spec("plugins.treesitter")
+spec("plugins.tsautotag")
+spec("plugins.tsplayground")
 
 require("lazy").setup({
 	spec = LAZY_PLUGIN_SPEC,

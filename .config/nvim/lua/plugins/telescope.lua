@@ -1,14 +1,73 @@
 return {
 	"nvim-telescope/telescope.nvim",
 	tag = "0.1.8",
-	-- or                              , branch = '0.1.x',
 	dependencies = { "nvim-lua/plenary.nvim" },
 	cmd = "Telescope",
 	keys = {
-		{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find files" },
-		{ "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Live grep" },
-		{ "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
-		{ "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help tags" },
+		{ "<leader>ff", function()
+			-- Close all floating windows that might be diagnostics
+			for _, win in ipairs(vim.api.nvim_list_wins()) do
+				local config = vim.api.nvim_win_get_config(win)
+				if config.relative ~= "" then
+					local buf = vim.api.nvim_win_get_buf(win)
+					local bufname = vim.api.nvim_buf_get_name(buf)
+					local ft = vim.api.nvim_buf_get_option(buf, "filetype")
+					-- Close if it looks like a diagnostic float
+					if bufname == "" and (ft == "" or ft == "markdown") then
+						pcall(vim.api.nvim_win_close, win, true)
+					end
+				end
+			end
+			vim.cmd("Telescope find_files")
+		end, desc = "Find files" },
+		{ "<leader>fg", function()
+			-- Close all floating windows that might be diagnostics
+			for _, win in ipairs(vim.api.nvim_list_wins()) do
+				local config = vim.api.nvim_win_get_config(win)
+				if config.relative ~= "" then
+					local buf = vim.api.nvim_win_get_buf(win)
+					local bufname = vim.api.nvim_buf_get_name(buf)
+					local ft = vim.api.nvim_buf_get_option(buf, "filetype")
+					-- Close if it looks like a diagnostic float
+					if bufname == "" and (ft == "" or ft == "markdown") then
+						pcall(vim.api.nvim_win_close, win, true)
+					end
+				end
+			end
+			vim.cmd("Telescope live_grep")
+		end, desc = "Live grep" },
+		{ "<leader>fb", function()
+			-- Close all floating windows that might be diagnostics
+			for _, win in ipairs(vim.api.nvim_list_wins()) do
+				local config = vim.api.nvim_win_get_config(win)
+				if config.relative ~= "" then
+					local buf = vim.api.nvim_win_get_buf(win)
+					local bufname = vim.api.nvim_buf_get_name(buf)
+					local ft = vim.api.nvim_buf_get_option(buf, "filetype")
+					-- Close if it looks like a diagnostic float
+					if bufname == "" and (ft == "" or ft == "markdown") then
+						pcall(vim.api.nvim_win_close, win, true)
+					end
+				end
+			end
+			vim.cmd("Telescope buffers")
+		end, desc = "Buffers" },
+		{ "<leader>fh", function()
+			-- Close all floating windows that might be diagnostics
+			for _, win in ipairs(vim.api.nvim_list_wins()) do
+				local config = vim.api.nvim_win_get_config(win)
+				if config.relative ~= "" then
+					local buf = vim.api.nvim_win_get_buf(win)
+					local bufname = vim.api.nvim_buf_get_name(buf)
+					local ft = vim.api.nvim_buf_get_option(buf, "filetype")
+					-- Close if it looks like a diagnostic float
+					if bufname == "" and (ft == "" or ft == "markdown") then
+						pcall(vim.api.nvim_win_close, win, true)
+					end
+				end
+			end
+			vim.cmd("Telescope help_tags")
+		end, desc = "Help tags" },
 	},
 	config = function()
 		require("telescope").setup({
@@ -22,10 +81,6 @@ return {
 			pickers = {
 				find_files = {
 					hidden = true,
-					cwd = vim.loop.cwd(), -- This ensures it uses shell's working directory
-				},
-				live_grep = {
-					cwd = vim.loop.cwd(), -- This ensures it uses shell's working directory
 				},
 			},
 		})

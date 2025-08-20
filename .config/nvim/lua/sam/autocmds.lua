@@ -12,6 +12,22 @@ local diagnostics = augroup("Diagnostics", { clear = true })
 -- LSP Autocommands
 -- =============================================================================
 
+-- Set custom LSP hover window
+autocmd({ "VimEnter", "VimResized" }, {
+	group = lsp_group,
+	desc = "Setup LSP hover window",
+	callback = function()
+		local width = math.floor(vim.o.columns * 0.8)
+		local height = math.floor(vim.o.lines * 0.3)
+
+		vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+			border = "rounded",
+			max_width = width,
+			max_height = height,
+		})
+	end,
+})
+
 -- LSP Keymaps and settings when LSP attaches
 autocmd("LspAttach", {
 	group = lsp_group,
@@ -71,37 +87,53 @@ autocmd("LspAttach", {
 -- Diagnostic Autocommands
 -- =============================================================================
 
--- Auto-close diagnostic float when leaving buffer
-autocmd({ "BufLeave", "BufHidden", "BufUnload" }, {
-	group = diagnostics,
-	desc = "Close diagnostic float when leaving buffer",
-	callback = function()
-		local wins = vim.api.nvim_list_wins()
-		for _, win in ipairs(wins) do
-			local success, win_config = pcall(vim.api.nvim_win_get_config, win)
-			if success and win_config.relative ~= "" then
-				-- This is a floating window
-				local buf = vim.api.nvim_win_get_buf(win)
-				local ft = vim.api.nvim_buf_get_option(buf, "filetype")
-				-- Check if it's a diagnostic float
-				if ft == "" or ft == "diagnostic" or ft == "diagnostics" then
-					pcall(vim.api.nvim_win_close, win, true)
-				end
-			end
-		end
-	end,
-})
+-- Diagnostic float autocmd removed for now
 
 -- =============================================================================
 -- General Autocommands
 -- =============================================================================
 
--- Highlight on yank
+-- Highlight on yank and restore cursor after select-all yank
 autocmd("TextYankPost", {
 	group = general,
-	desc = "Highlight yanked text",
+	desc = "Highlight yanked text and restore cursor after select-all",
 	callback = function()
+		-- Always highlight yanked text
 		vim.highlight.on_yank({ higroup = "Visual", timeout = 200 })
+		
+		-- Check if entire buffer was yanked (select-all)
+		local start_line = vim.fn.line("'[")
+		local end_line = vim.fn.line("']")
+		local last_line = vim.fn.line("$")
+		
+		-- If yanked from first to last line and we have a saved position
+		if start_line == 1 and end_line == last_line and vim.g.saved_cursor_before_selectall then
+			vim.schedule(function()
+				vim.fn.setpos(".", vim.g.saved_cursor_before_selectall)
+				vim.g.saved_cursor_before_selectall = nil
+			end)
+		end
+	end,
+})
+
+-- Clean up saved position when leaving visual mode (if not from Ctrl+Q)
+autocmd("ModeChanged", {
+	group = general,
+	desc = "Clean up saved cursor position",
+	pattern = "[vV]:n",
+	callback = function()
+		-- Small delay to allow TextYankPost to fire first if yanking
+		vim.defer_fn(function()
+			-- Only clear if it wasn't a select-all operation that yanked
+			if vim.g.saved_cursor_before_selectall then
+				local reg_content = vim.fn.getreg('"')
+				local buffer_content = table.concat(vim.api.nvim_buf_get_lines(0, 0, -1, false), "\n")
+				-- If the yanked content isn't the whole buffer, clear the saved position
+				if reg_content ~= buffer_content then
+					vim.g.saved_cursor_before_selectall = nil
+				end
+			end
+		end, 100)
 	end,
 })
 
@@ -176,6 +208,45 @@ autocmd({ "FocusGained", "TermClose", "TermLeave" }, {
 	callback = function()
 		if vim.o.buftype ~= "nofile" then
 			vim.cmd("checktime")
+		end
+	end,
+})
+
+-- Preserve working directory when Oil is default file explorer
+autocmd("VimEnter", {
+	group = general,
+	pattern = "*",
+	callback = function()
+		if vim.env.PWD then
+			vim.api.nvim_set_current_dir(vim.env.PWD)
+		end
+	end,
+})
+
+-- =============================================================================
+-- Persistent Folds
+-- =============================================================================
+
+-- Save manually created folds automatically
+local save_folds = augroup("Persistent Folds", { clear = true })
+
+autocmd("BufWinLeave", {
+	group = save_folds,
+	pattern = "*",
+	callback = function()
+		-- Only if the buffer has a name
+		if vim.fn.bufname("%") ~= "" then
+			vim.cmd.mkview()
+		end
+	end,
+})
+
+autocmd("BufWinEnter", {
+	group = save_folds,
+	pattern = "*",
+	callback = function()
+		if vim.fn.bufname("%") ~= "" then
+			vim.cmd.loadview({ mods = { emsg_silent = true } })
 		end
 	end,
 })
