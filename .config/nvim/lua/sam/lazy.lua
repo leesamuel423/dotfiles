@@ -11,11 +11,35 @@ if not vim.uv.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-vim.g.mapleader = " "
+local LAZY_PLUGIN_SPEC = {}
 
-vim.keymap.set("n", "<leader>ps", "<cmd>lua require('lazy').sync()<cr>", { silent = true })
+---Adds a plugin import specification to the global LAZY_PLUGIN_SPEC table.
+---@param item string The module path of the plugin to import.
+local function spec(item)
+	table.insert(LAZY_PLUGIN_SPEC, { import = item })
+end
 
-return require("lazy").setup({
+spec("plugins.oil")
+spec("plugins.undotree")
+spec("plugins.indentline")
+spec("plugins.harpoon")
+spec("plugins.whichkey")
+spec("plugins.telescope")
+spec("plugins.nvim-jdtls")
+spec("plugins.blink-cmp")
+spec("plugins.mini")
+spec("plugins.autopairs")
+spec("plugins.colors")
+spec("plugins.fugitive")
+spec("plugins.peek")
+spec("plugins.tmux-navigator")
+spec("plugins.todocomments")
+spec("plugins.treesitter")
+spec("plugins.tsautotag")
+spec("plugins.tsplayground")
+spec("plugins.conform")
+
+require("lazy").setup({
 	spec = LAZY_PLUGIN_SPEC,
 	defaults = {
 		lazy = true,

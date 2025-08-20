@@ -14,7 +14,12 @@ vim.g.mapleader = " "
 map("n", "<leader>nh", ":nohl<CR>", { desc = "clear search highlights" })
 
 -- Select all text
-map("n", "<C-q>", "gg<S-v>G", opts)
+map("n", "<C-q>", function()
+	-- Save cursor position before selecting all
+	vim.g.saved_cursor_before_selectall = vim.fn.getpos(".")
+	-- Select all text
+	vim.cmd("normal! ggVG")
+end, opts)
 
 -- Quickly source the current file
 map("n", "<leader><leader>", function()
@@ -25,7 +30,38 @@ map("n", "<space>x", ":.lua <CR>", { desc = "execute current line as lua" })
 map("v", "<space>x", ":.lua <CR>", { desc = "execute selected text as lua" })
 
 -- Open file explorer (either netrw with Ex or Oil.nvim)
-map("n", "<leader>pv", vim.cmd.Oil, opts, { desc = "open file explorer" })
+map("n", "<leader>pv", function()
+	-- Close all floating windows that might be diagnostics
+	for _, win in ipairs(vim.api.nvim_list_wins()) do
+		local config = vim.api.nvim_win_get_config(win)
+		if config.relative ~= "" then
+			local buf = vim.api.nvim_win_get_buf(win)
+			local bufname = vim.api.nvim_buf_get_name(buf)
+			local ft = vim.api.nvim_buf_get_option(buf, "filetype")
+			-- Close if it looks like a diagnostic float
+			if bufname == "" and (ft == "" or ft == "markdown") then
+				pcall(vim.api.nvim_win_close, win, true)
+			end
+		end
+	end
+	vim.cmd.Oil()
+end, { desc = "open file explorer" })
+map("n", "<leader>pt", function()
+	-- Close all floating windows that might be diagnostics
+	for _, win in ipairs(vim.api.nvim_list_wins()) do
+		local config = vim.api.nvim_win_get_config(win)
+		if config.relative ~= "" then
+			local buf = vim.api.nvim_win_get_buf(win)
+			local bufname = vim.api.nvim_buf_get_name(buf)
+			local ft = vim.api.nvim_buf_get_option(buf, "filetype")
+			-- Close if it looks like a diagnostic float
+			if bufname == "" and (ft == "" or ft == "markdown") then
+				pcall(vim.api.nvim_win_close, win, true)
+			end
+		end
+	end
+	vim.cmd("Oil .")
+end, { desc = "open file explorer to root" })
 
 -- Join lines but keep cursor position
 map("n", "J", "mzJ`z", { desc = "join lines and keep cursor position" })
@@ -87,18 +123,9 @@ map("n", "gra", vim.lsp.buf.code_action, { desc = "code action" })
 map("n", "grr", vim.lsp.buf.references, { desc = "find references" })
 
 -- ========================================================================
--- Telescope
--- ========================================================================
-local builtin = require("telescope.builtin")
-map("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
-map("n", "<leader>fg", builtin.live_grep, { desc = "Telescope live grep" })
-map("n", "<leader>fb", builtin.buffers, { desc = "Telescope buffers" })
-map("n", "<leader>fh", builtin.help_tags, { desc = "Telescope help tags" })
-
--- ========================================================================
 -- TMUX-navigator
 -- ========================================================================
-map("n", "C-h", ":TmuxNavigateLeft<CR>")
-map("n", "C-j", ":TmuxNavigateDown<CR>")
-map("n", "C-k", ":TmuxNavigateUp<CR>")
-map("n", "C-l", ":TmuxNavigateRight<CR>")
+-- map("n", "C-h", ":TmuxNavigateLeft<CR>")
+-- map("n", "C-j", ":TmuxNavigateDown<CR>")
+-- map("n", "C-k", ":TmuxNavigateUp<CR>")
+-- map("n", "C-l", ":TmuxNavigateRight<CR>")

@@ -1,32 +1,56 @@
-vim.api.nvim_create_autocmd("LspAttach", {
-	desc = "LSP actions",
-	callback = function(event)
-		local opts = { noremap = true, silent = true, buffer = event.buf }
-		local keymap = vim.keymap.set
-		-- • |grn| in Normal mode maps to                 |vim.lsp.buf.rename()|
-		-- • |grr| in Normal mode maps to                 |vim.lsp.buf.references()|
-		-- • |gri| in Normal mode maps to                 |vim.lsp.buf.implementation()|
-		-- • |gra| is mapped in Normal and Visual mode to |vim.lsp.buf.code_action()|
-		-- •   |K| in Normal mode maps to                 |vim.lsp.buf.hover()|
-
-		keymap("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", opts)
-	end,
-})
-
+-- Basic servers that work out of the box
 local servers = {
-	"bashls",
+	"asm_lsp",
+	"clangd",
+	"cmake",
+	"dockerls",
+	"docker_compose_language_service",
 	"gopls",
+	"html",
+	"jdtls",
+	"jsonls",
 	"lua_ls",
 	"marksman",
-	"rust-analyzer",
-	"ts_ls",
-	"deno",
+	"pyright",
+	"ruff",
+	"rust_analyzer",
+	"sqls",
+	"tailwindcss",
+	"yamlls",
 }
 
+-- Configure all servers with default settings
 vim.lsp.config("*", {
-	root_markers = { ".git" },
+	root_markers = { ".git", ".gitignore" },
+	capabilities = require("blink.cmp").get_lsp_capabilities(),
 })
 
+-- Enable the servers
 vim.lsp.enable(servers)
-vim.diagnostic.enable(true)
-vim.diagnostic.config({ virtual_lines = { current_line = true } })
+
+-- Conditional TypeScript/Deno/Biome setup
+-- Prioritize Biome if biome.json exists, then Deno, then ts_ls
+if vim.fn.findfile("biome.json", ".;") ~= "" or vim.fn.findfile("biome.jsonc", ".;") ~= "" then
+	vim.lsp.enable("biome")
+elseif vim.fn.findfile("deno.json", ".;") ~= "" or vim.fn.findfile("deno.jsonc", ".;") ~= "" then
+	vim.lsp.enable("denols")
+else
+	vim.lsp.enable("ts_ls")
+end
+
+-- Diagnostic configuration
+vim.diagnostic.config({
+	virtual_text = false, -- Disable inline virtual text
+	signs = true,
+	underline = true,
+	update_in_insert = false,
+	severity_sort = true,
+	float = {
+		source = "always", -- Show source in diagnostic float window
+		border = "rounded",
+		focusable = true, -- Allow focusing the float window to copy text
+	},
+})
+
+
+

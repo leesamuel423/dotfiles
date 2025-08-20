@@ -14,13 +14,13 @@ vim.opt.scrolloff = 8 -- Keep 8 lines visible above/below cursor
 -- Indentation and Formatting
 -- ========================================================================
 vim.opt.tabstop = 2 -- Tab width
-vim.opt.shiftwidth = 2 -- Autoindent uses 4 spaces
+vim.opt.shiftwidth = 2 -- Autoindent uses 2 spaces
 vim.opt.expandtab = true -- Convert tabs to spaces
-vim.opt.softtabstop = 2 -- Tab feels like 4 spaces when editing
+vim.opt.softtabstop = 2 -- Tab feels like 2 spaces when editing
 vim.opt.smartindent = true -- Smart autoindenting
 vim.opt.autoindent = true -- Copy indent from current line when starting a new line
 vim.opt.breakindent = true -- Wrapped lines will be visually indented
-vim.opt.wrap = false -- No line wrapping
+vim.opt.wrap = true -- No line wrapping
 
 -- ========================================================================
 -- Search

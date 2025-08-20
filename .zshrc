@@ -72,3 +72,16 @@ eval "$(pyenv virtualenv-init -)"
 
 # rust
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# ---------> LSP SCRIPTS <---------
+# Bazel JDTLS setup for Java projects
+bazel-jdtls() {
+    local script_path="$HOME/scripts/lsp/bazel_jdtls_setup.sh"
+    if [ -f "$script_path" ]; then
+        bash "$script_path" "${1:-.}"
+    else
+        echo "Error: bazel_jdtls_setup.sh not found at $script_path"
+        return 1
+    fi
+}
+alias bjdtls='bazel-jdtls'

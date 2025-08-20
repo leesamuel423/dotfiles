@@ -31,9 +31,4 @@ return {
 			["gx"] = {},
 		},
 	},
-	cmd = "Oil",
-	keys = {
-		{ "<leader>ot", [[<cmd>Oil .<cr>]] },
-		{ "<leader>of", [[<cmd>Oil %:p:h<cr>]] },
-	},
 }
