@@ -1,5 +1,6 @@
 require("sam.options")
 require("sam.keymaps")
+require("sam.autocmds")
 require("sam.lazy")
 require("sam.lsp")
 
