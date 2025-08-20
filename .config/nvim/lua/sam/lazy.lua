@@ -26,6 +26,7 @@ spec("plugins.harpoon")
 spec("plugins.whichkey")
 spec("plugins.telescope")
 spec("plugins.nvim-jdtls")
+spec("plugins.blink-cmp")
 
 require("lazy").setup({
 	spec = LAZY_PLUGIN_SPEC,

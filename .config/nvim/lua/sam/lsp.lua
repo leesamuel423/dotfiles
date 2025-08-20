@@ -22,6 +22,7 @@ local servers = {
 -- Configure all servers with default settings
 vim.lsp.config("*", {
 	root_markers = { ".git", ".gitignore" },
+	capabilities = require("blink.cmp").get_lsp_capabilities(),
 })
 
 -- Enable the servers
