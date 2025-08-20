@@ -37,6 +37,7 @@ spec("plugins.todocomments")
 spec("plugins.treesitter")
 spec("plugins.tsautotag")
 spec("plugins.tsplayground")
+spec("plugins.conform")
 
 require("lazy").setup({
 	spec = LAZY_PLUGIN_SPEC,
