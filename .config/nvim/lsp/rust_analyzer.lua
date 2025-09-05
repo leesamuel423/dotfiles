@@ -14,6 +14,7 @@ return {
 				},
 			},
 			checkOnSave = {
+				enable = true,
 				command = "clippy",
 			},
 			procMacro = {

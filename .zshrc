@@ -21,7 +21,6 @@ source $ZSH/oh-my-zsh.sh
 # Editor aliases
 alias v="nvim"
 alias t="tmux"
-alias cd="z"
 alias ls="eza -la"
 alias python="python3"
 alias gs="git status --short"
