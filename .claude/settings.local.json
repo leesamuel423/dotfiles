@@ -1,0 +1,55 @@
+{
+  "includeCoAuthoredBy": false,
+  "cleanupPeriodDays": 10,
+  "outputStyle": "Explanatory",
+  "enableAllProjectMcpServers": true,
+  "permissions": {
+    "allow": [
+      "Bash",
+      "Bash(alias nvim)",
+      "Bash(rg:*)",
+      "Bash(/opt/homebrew/Cellar/ripgrep/14.1.1/bin/rg -n \"chdir|cd |nvim_set_current_dir|VimEnter.*cd\" /Users/samuellee/dotfiles/.config/nvim)",
+      "Bash(find:*)",
+      "Bash(brew list:*)",
+      "Bash(mkdir:*)",
+      "Bash(uv:*)",
+      "Bash(mv:*)",
+      "Bash(grep:*)",
+      "Bash(npm:*)",
+      "Bash(ls:*)",
+      "Bash(cd:*)",
+      "Bash(cp:*)",
+      "Bash(rm:*)",
+      "Bash(cat:*)",
+      "Bash(echo:*)",
+      "Bash(pwd)",
+      "Bash(git:*)",
+      "Write",
+      "Edit",
+      "Bash(chmod:*)",
+      "Bash(touch:*)",
+      "Bash(which:*)",
+      "Bash(whereis:*)",
+      "Bash(env)",
+      "Bash(pip:*)",
+      "Bash(python:*)",
+      "Bash(node:*)",
+      "Bash(yarn:*)"
+    ],
+    "deny": []
+  },
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "uv run .claude/hooks/notification.py --notify"
+          }
+        ]
+      }
+    ]
+  }
+}
+
