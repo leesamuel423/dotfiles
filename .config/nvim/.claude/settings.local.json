@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(nvim:*)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(/usr/libexec/java_home:*)",
+      "Bash(java:*)",
+      "Bash(timeout:*)",
+      "Bash(rm:*)",
+      "Bash(./gradlew --stop)",
+      "Bash(mkdir:*)",
+      "Bash(brew list:*)",
+      "Bash(brew reinstall:*)",
+      "Bash(bazel info:*)",
+      "Bash(chmod:*)",
+      "Bash(cp:*)",
+      "Bash(tree-sitter:*)",
+      "Bash(echo $PATH)",
+      "Bash(/opt/homebrew/bin/tree-sitter --version)",
+      "Bash(cargo install:*)"
+    ],
+    "deny": [],
+    "ask": [],
+    "additionalDirectories": [
+      "/opt/homebrew/Cellar/tree-sitter"
+    ]
+  }
+}
