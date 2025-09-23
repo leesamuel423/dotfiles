@@ -35,6 +35,7 @@ alias tree='tree "$@" | tee >(pbcopy)'
 alias treeclean='tree -I "node_modules|__pycache__|.git|dist|build|*.pyc" "$@" | tee >(pbcopy)'
 alias cat="bat"
 alias makef="make -f ~/Makefile"
+alias zshrc="v ~/.zshrc"
 
 
 # Application aliases
@@ -49,6 +50,11 @@ eval "$(zoxide init zsh)"
 
 # thefuck config
 eval $(thefuck --alias)
+
+# open command in vi
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey '^X^E' edit-command-line
 
 # ---------> LANGUAGE & DEVELOPMENT <---------
 # nvm
