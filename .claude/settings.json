@@ -3,10 +3,16 @@
   "cleanupPeriodDays": 10,
   "outputStyle": "Explanatory",
   "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "filesystem",
+    "memory",
+    "fetch"
+  ],
+  "spinnerTipsEnabled": true,
   "model": "opus",
   "statusLine": {
     "type": "command",
-    "command": "input=$(cat); current_dir=$(echo \"$input\" | jq -r '.workspace.current_dir'); if [ \"$current_dir\" = \".\" ]; then current_dir=$(pwd); fi; if [ -d \"$current_dir/.git\" ]; then cd \"$current_dir\" && branch=$(git branch --show-current 2>/dev/null || echo 'main'); status=$(git status --porcelain 2>/dev/null); if [ -n \"$status\" ]; then git_info=\" ($branch ✗)\"; else git_info=\" ($branch ✔)\"; fi; else git_info=\"\"; fi; printf \"%s%s\" \"$(basename \"$current_dir\")\" \"$git_info\""
+    "command": "input=$(cat); current_dir=$(echo \"$input\" | jq -r '.workspace.current_dir'); if [ \"$current_dir\" = \".\" ]; then current_dir=$(pwd); fi; cd \"$current_dir\" 2>/dev/null; project_name=$(basename \"$current_dir\"); git_info=\"\"; env_info=\"\"; lang_info=\"\"; if [ -d \".git\" ]; then branch=$(git branch --show-current 2>/dev/null || echo 'main'); modified=$(git status --porcelain 2>/dev/null | wc -l | tr -d ' '); if [ \"$modified\" -gt 0 ]; then git_info=\" 🔸$branch +$modified\"; else git_info=\" ✅$branch\"; fi; fi; if [ -n \"$VIRTUAL_ENV\" ]; then env_info=\" 🐍$(basename $VIRTUAL_ENV)\"; elif [ -f \".venv/bin/activate\" ]; then env_info=\" 🐍.venv\"; elif [ -f \"venv/bin/activate\" ]; then env_info=\" 🐍venv\"; fi; if [ -f \"package.json\" ]; then node_version=$(node -v 2>/dev/null | cut -d'v' -f2 | cut -d'.' -f1); if [ -n \"$node_version\" ]; then lang_info=\"${lang_info} 📦node$node_version\"; fi; fi; if [ -f \"requirements.txt\" ] || [ -f \"pyproject.toml\" ] || [ -f \"setup.py\" ]; then py_version=$(python3 --version 2>/dev/null | cut -d' ' -f2 | cut -d'.' -f1,2); if [ -n \"$py_version\" ]; then lang_info=\"${lang_info} 🐍py$py_version\"; fi; fi; if [ -f \"go.mod\" ] || [ -f \"go.sum\" ]; then go_version=$(go version 2>/dev/null | cut -d' ' -f3 | sed 's/go//' | cut -d'.' -f1,2); if [ -n \"$go_version\" ]; then lang_info=\"${lang_info} 🐹go$go_version\"; fi; fi; if [ -f \"Cargo.toml\" ]; then rust_version=$(rustc --version 2>/dev/null | cut -d' ' -f2 | cut -d'.' -f1,2); if [ -n \"$rust_version\" ]; then lang_info=\"${lang_info} 🦀rust$rust_version\"; fi; fi; if [ -f \"pom.xml\" ] || [ -f \"build.gradle\" ] || [ -f \"build.gradle.kts\" ]; then java_version=$(java -version 2>&1 | head -n1 | cut -d'\"' -f2 | cut -d'.' -f1); if [ -n \"$java_version\" ]; then if [ \"$java_version\" = \"1\" ]; then java_version=$(java -version 2>&1 | head -n1 | cut -d'\"' -f2 | cut -d'.' -f2); fi; lang_info=\"${lang_info} ☕java$java_version\"; fi; fi; printf \"📁%s%s%s%s\" \"$project_name\" \"$git_info\" \"$env_info\" \"$lang_info\""
   },
   "permissions": {
     "allow": [
@@ -41,17 +47,5 @@
     ],
     "deny": []
   },
-  "hooks": {
-    "Notification": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "uv run .claude/hooks/notification.py --notify"
-          }
-        ]
-      }
-    ]
-  }
+  "hooks": {}
 }
