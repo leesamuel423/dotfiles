@@ -1,3 +1,14 @@
 {
-  "spinnerTipsEnabled": true
+  "permissions": {
+    "allow": [
+      "Read(//Users/samuellee/**)"
+    ]
+  },
+  "spinnerTipsEnabled": true,
+  "enabledMcpjsonServers": [
+    "filesystem",
+    "memory",
+    "fetch"
+  ],
+  "enableAllProjectMcpServers": true
 }

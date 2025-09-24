@@ -56,6 +56,7 @@ autoload -U edit-command-line
 zle -N edit-command-line
 bindkey '^X^E' edit-command-line
 
+
 # ---------> LANGUAGE & DEVELOPMENT <---------
 # nvm
 export NVM_DIR="$HOME/.nvm"
