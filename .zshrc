@@ -91,3 +91,10 @@ bazel-jdtls() {
     fi
 }
 alias bjdtls='bazel-jdtls'
+
+# Added by CodeRabbit CLI installer
+export PATH="/Users/samuellee/.local/bin:$PATH"
+export PATH="$HOME/.deno/bin:$PATH"
+
+
+

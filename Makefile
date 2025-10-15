@@ -16,6 +16,7 @@ help:
 	@echo "  quartz-dev        - Start Quartz development server"
 	@echo "  tmpdir            - Create and navigate to temporary directory"
 	@echo "  update-notes      - Update notes"
+	@echo "  claude-update     - Fix and reinstall Claude Code"
 	@echo "  sync-back         - Sync back repository"
 	@echo "  sync-damon        - Sync damon repository"
 	@echo "  sync-front        - Sync front repository"
@@ -48,6 +49,10 @@ quartz-dev:
 .PHONY: tmpdir
 tmpdir:
 	@$(SCRIPTS_DIR)/tmpdir.sh
+
+.PHONY: claude-update
+claude-update:
+	@$(HOME_DIR)/dotfiles/scripts/fix-claude-code.sh
 
 # Sync scripts from home directory
 .PHONY: sync-back
