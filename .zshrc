@@ -98,3 +98,13 @@ export PATH="$HOME/.deno/bin:$PATH"
 
 
 
+
+# bun completions
+[ -s "/Users/samuellee/.bun/_bun" ] && source "/Users/samuellee/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Added by Antigravity
+export PATH="/Users/samuellee/.antigravity/antigravity/bin:$PATH"

@@ -34,17 +34,22 @@
     ],
     "deny": []
   },
-  "model": "sonnet[1m]",
-  "enableAllProjectMcpServers": true,
-  "enabledMcpjsonServers": [
-    "filesystem",
-    "memory",
-    "fetch"
-  ],
-  "hooks": {},
   "statusLine": {
     "type": "command",
     "command": "input=$(cat); current_dir=$(echo \"$input\" | jq -r '.workspace.current_dir'); if [ \"$current_dir\" = \".\" ]; then current_dir=$(pwd); fi; cd \"$current_dir\" 2>/dev/null; dir_display=\"~${current_dir#$HOME}\"; if [ \"$current_dir\" = \"$HOME\" ]; then dir_display=\"~\"; fi; git_info=\"\"; if [ -d \".git\" ]; then branch=$(git branch --show-current 2>/dev/null || echo 'main'); status=$(git status --porcelain 2>/dev/null); if [ -n \"$status\" ]; then git_status=\" ✗\"; else git_status=\" ✔\"; fi; git_info=\" ($branch$git_status)\"; fi; printf \"%s%s\" \"$dir_display\" \"$git_info\""
+  },
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "feature-dev@claude-plugins-official": true,
+    "pr-review-toolkit@claude-plugins-official": true,
+    "hookify@claude-plugins-official": true,
+    "rust-analyzer-lsp@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "greptile@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "linear@claude-plugins-official": true
   },
   "outputStyle": "Explanatory",
   "spinnerTipsEnabled": true,
