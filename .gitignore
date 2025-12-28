@@ -6,3 +6,16 @@ scripts/tutoring/students
 .claude/statsig/*
 .claude/todos/*
 
+# Claude Code ephemeral/cache files
+.claude/debug/
+.claude/file-history/
+.claude/history.jsonl
+.claude/plans/
+.claude/plugins/cache/
+.claude/plugins/install-counts-cache.json
+.claude/plugins/installed_plugins.json
+.claude/plugins/known_marketplaces.json
+.claude/plugins/marketplaces/
+.claude/security_warnings_state_*.json
+.claude/stats-cache.json
+
