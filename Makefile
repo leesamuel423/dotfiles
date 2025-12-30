@@ -11,7 +11,11 @@ help:
 	@echo "Available targets:"
 	@echo "  commit            - Git commit with custom date (runs in current directory)"
 	@echo "  push              - Push all unpushed commits across all branches"
-	@echo "  nvim-switch       - Switch nvim configurations"
+	@echo "  nvim-switch       - Switch nvim configurations (interactive)"
+	@echo "  nvim-list         - List available nvim configurations"
+	@echo "  nvim-current      - Show current nvim configuration"
+	@echo "  nvim-new NAME=x   - Create a new empty config 'x'"
+	@echo "  nvim-add NAME=x   - Save current nvim config as profile 'x'"
 	@echo "  open-gh           - Open GitHub repository"
 	@echo "  quartz-dev        - Start Quartz development server"
 	@echo "  tmpdir            - Create and navigate to temporary directory"
@@ -34,9 +38,36 @@ commit:
 push:
 	@$(SCRIPTS_DIR)/push.sh
 
+# Neovim configuration management
 .PHONY: nvim-switch
 nvim-switch:
 	@$(SCRIPTS_DIR)/nvim-switch.sh
+
+.PHONY: nvim-list
+nvim-list:
+	@$(SCRIPTS_DIR)/nvim-switch.sh list
+
+.PHONY: nvim-current
+nvim-current:
+	@$(SCRIPTS_DIR)/nvim-switch.sh current
+
+.PHONY: nvim-new
+nvim-new:
+ifndef NAME
+	@echo "Usage: make nvim-new NAME=<config-name>"
+	@echo "Example: make nvim-new NAME=minimal"
+else
+	@$(SCRIPTS_DIR)/nvim-switch.sh new $(NAME)
+endif
+
+.PHONY: nvim-add
+nvim-add:
+ifndef NAME
+	@echo "Usage: make nvim-add NAME=<config-name>"
+	@echo "Example: make nvim-add NAME=lazyvim"
+else
+	@$(SCRIPTS_DIR)/nvim-switch.sh add $(NAME)
+endif
 
 .PHONY: open-gh
 open-gh:
