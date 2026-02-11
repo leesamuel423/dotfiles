@@ -49,9 +49,11 @@
     "greptile@claude-plugins-official": true,
     "security-guidance@claude-plugins-official": true,
     "code-review@claude-plugins-official": true,
-    "linear@claude-plugins-official": true
+    "linear@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true
   },
   "outputStyle": "Explanatory",
   "spinnerTipsEnabled": true,
-  "alwaysThinkingEnabled": true
+  "alwaysThinkingEnabled": true,
+  "model": "opus"
 }

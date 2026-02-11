@@ -64,6 +64,28 @@ outer.bottom = 0
 outer.top = 0
 outer.right = 0
 
+[workspace-to-monitor-force-assignment]
+0 = 1  # Left external
+1 = 1
+2 = 1
+3 = 1
+4 = 1
+5 = 1
+6 = 1
+7 = 1
+8 = 1
+9 = 1
+Q = 3  # Right external
+W = 3
+E = 3
+R = 3
+T = 3
+Y = 3
+U = 3
+I = 3
+O = 3
+P = 3
+
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # 'main' binding mode must be always presented
@@ -219,44 +241,45 @@ run = 'move-node-to-workspace 0'
 
 [[on-window-detected]] # Discord
 if.app-id = 'com.hnc.Discord'
-run = 'move-node-to-workspace 1'
+run = 'move-node-to-workspace 9'
 
 [[on-window-detected]] # Slack
 if.app-id = 'com.tinyspeck.slackmacgap'
-run = 'move-node-to-workspace 2'
+run = 'move-node-to-workspace 9'
+
+[[on-window-detected]] # iMessage
+if.app-id = 'com.apple.MobileSMS'
+run = 'move-node-to-workspace 9'
 
 [[on-window-detected]] # Spark
 if.app-id = 'com.readdle.smartemail-Mac'
-run = 'move-node-to-workspace 3'
+run = 'move-node-to-workspace 8'
 
 [[on-window-detected]] # ClickUp
 if.app-id = 'com.clickup.desktop-app'
-run = 'move-node-to-workspace 4'
+run = 'move-node-to-workspace 6'
 
 [[on-window-detected]] # Asana
 if.app-id = 'com.electron.asana'
-run = 'move-node-to-workspace 4'
+run = 'move-node-to-workspace 6'
 
 [[on-window-detected]] # Linear
 if.app-id = 'com.electron.asana'
-run = 'move-node-to-workspace 4'
+run = 'move-node-to-workspace 6'
 
 [[on-window-detected]] # Spotify
 if.app-id = 'com.spotify.client'
-run = 'move-node-to-workspace 9'
+run = 'move-node-to-workspace 7'
 
 [[on-window-detected]] # Yaak
 if.app-id = 'app.yaak.desktop'
-run = 'move-node-to-workspace Z'
+run = 'move-node-to-workspace Y'
 
 [[on-window-detected]] # Postman
 if.app-id = 'com.postmanlabs.mac'
-run = 'move-node-to-workspace Z'
+run = 'move-node-to-workspace Y'
 
 [[on-window-detected]] # Docker Desktop
 if.app-id = 'com.electron.dockerdesktop'
-run = 'move-node-to-workspace X'
+run = 'move-node-to-workspace Y'
 
-[[on-window-detected]] # OrbStack
-if.app-id = 'dev.kdrag0n.MacVirt'
-run = 'move-node-to-workspace X'

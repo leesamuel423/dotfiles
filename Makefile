@@ -25,6 +25,7 @@ help:
 	@echo "  sync-damon        - Sync damon repository"
 	@echo "  sync-front        - Sync front repository"
 	@echo "  sync-roast        - Sync roast repository"
+	@echo "  class             - Attach to CIT595 docker container"
 	@echo ""
 	@echo "Usage from any directory: make -f ~/Makefile <target>"
 
@@ -105,3 +106,9 @@ sync-roast:
 # Alias for common typo
 .PHONY: sync-daemon
 sync-daemon: sync-damon
+
+# Alias for CIT Docker Container
+.PHONY: class
+class:
+	@docker start cit595 2>/dev/null || true
+	@docker attach cit595
