@@ -1,0 +1,61 @@
+Perform a comprehensive audit of the "custom topics" feature across the entire codebase. Topics (also
+  called "categories" in the DB/API layer) allow users to categorize their prompts/queries. There is a
+  set of built-in "universal topics" and users can also create arbitrary custom topic strings.
+
+ ## What to audit
+
+ Examine EVERY file that touches topics/categories — frontend components, route pages, API routes,
+ services, stores, and utilities. For each file, determine whether it correctly handles **custom
+ (user-created) topic strings** that are NOT in the hardcoded UNIVERSAL_TOPICS list.
+ ## Specific things to check
+
+ ### Frontend — Components & Routes
+ 1. **Dropdowns/selectors** — Do all topic dropdowns show dynamic topics from the API
+ (`availableTopics` / `GET /categories`), or are any hardcoded to only UNIVERSAL_TOPICS?                2. **Color assignment** — Does `getTopicColor()` (in `chart-colors.ts`) receive a fallback index at
+ every call site, so custom topics get a color instead of undefined?                                    3. **Filter bar & filter store** — Does the global filter bar fetch topics dynamically? Does the
+ Zustand store handle arbitrary topic strings?                                                          4. **State refresh after mutations** — When a user creates a new custom topic (via add-prompt modal,
+ bulk edit, or bulk upload), does the parent page refresh `availableTopics` so the new topic appears    immediately in dropdowns without a page reload? Trace the callback chain for each mutation path.
+ 5. **Group-by / display** — Does the prompts table group-by-topic handle custom topics? Do detail
+ pages display custom topic names correctly?                                                            6. **Onboarding** — Do onboarding modals (AddCustomQueryModal, QueriesStep, BulkAddQueriesModal)
+ handle or restrict topics correctly?
+
+                                                                   ### Frontend — Key files to examine
+ - `apps/ui/src/components/prompts/prompts-table.tsx` — bulk edit topic flow, group-by
+ - `apps/ui/src/components/prompts/add-prompt-modal.tsx` — topic selector                               - `apps/ui/src/components/prompts/bulk-upload-modal.tsx` — CSV category column
+ - `apps/ui/src/components/filters/global-filter-bar.tsx` — topic filter chips                          - `apps/ui/src/lib/stores/dashboardFilterStore.ts` — filter state
+ - `apps/ui/src/lib/chart-colors.ts` — getTopicColor function                                           - `apps/ui/src/app/routes/prompts._index.tsx` — availableTopics threading
+ - `apps/ui/src/app/routes/prompts.$id.tsx` — detail page topics                                        - `apps/ui/src/app/routes/prompts.fanout-queries.tsx` — fanout page topics
+ - `apps/ui/src/components/analytics/prompt-sentiment-table.tsx` — topic colors                         - `apps/ui/src/components/analytics/sentiment-trend-chart.tsx` — topic colors                          - `apps/ui/src/components/analytics/topic-drivers.tsx` — topic rendering
+ - `apps/ui/src/components/analytics/sentiment-evidence-panel.tsx` — topic badge                        - `apps/ui/src/components/onboarding/` — all onboarding components
+
+                                     ### Backend — Services & Routes
+ 1. **GET /categories endpoint** — Does it merge UNIVERSAL_TOPICS with user-created topics from the     DB?
+ 2. **Topic validation** — What constraints exist on custom topic strings? Is input sanitized?          3. **Analytics queries** — Do all SQL queries that filter by category use parameterized queries that
+ work with arbitrary strings (not just hardcoded enums)?
+ 4. **LLM generators** — Do `query-generator.ts` and `prompt-analytics.ts` correctly constrain          AI-auto-generated queries to UNIVERSAL_TOPICS while still allowing user-created queries to have
+ custom topics?                                                                                         5. **Sentiment analysis** — How does `TOPIC_TERMS` in the sentiment service handle custom topics it
+ doesn't recognize? Is the fallback graceful? 6. **Fanout generator** — When generating fanout queries from a seed query with a custom topic, does
+ the topic propagate correctly?
+
+ ### Backend — Key files to examine
+ - `apps/api/src/routes/queries.ts` — /categories endpoint, topic CRUD
+ - `apps/api/src/services/query-generator.ts` — UNIVERSAL_TOPICS, AI generation
+ - `apps/api/src/services/prompt-analytics.ts` — analytics with topic filtering
+ - `apps/api/src/services/sentiment.ts` — TOPIC_TERMS, sentiment by topic
+ - `apps/api/src/services/fanout-generator.ts` — fanout topic inheritance
+ - `apps/api/src/services/competitors-analytics.ts` — competitor analytics queries
+ - `apps/api/src/services/fanout-analytics.ts` — fanout analytics queries
+
+ ## Output format
+
+ Produce a table with columns: File | Line(s) | Status | Issue (if any) | Severity
+
+ Status should be one of:
+ - ✅ Working correctly
+ - ⚠️ Minor issue (cosmetic, non-blocking)
+ - ❌ Bug (custom topics broken or missing)
+ - ℹ️ Intentional design (hardcoded by design, with explanation)
+
+ Group results by: Frontend Components, Frontend Routes, Backend Routes, Backend Services.
+
+ At the end, list any bugs found with specific fix recommendations including exact code changes.

@@ -1,0 +1,2188 @@
+The service worker navigation preload request was cancelled before 'preloadResponse' settled. If you intend to use 'preloadResponse', use waitUntil() or respondWith() to wait for the promise to settle.Understand this error
+3Navigated to chrome://new-tab-page/
+Navigated to https://www.youtube.com/
+m=kevlar_base_module,kevlar_main_module:9904 LegacyDataMixin will be applied to all legacy elements.
+Set `_legacyUndefinedCheck: true` on element class to enable.
+ublock-filters.js:2672 Blocked script execution in 'about:blank' because the document's frame is sandboxed and the 'allow-scripts' permission is not set.
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:13942
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:13947
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:13989
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:28415
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1973
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8170
+value @ custom-elements-es5-adapter.js:11
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8232
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7893
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1984
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3565
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3591
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36966
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36970Understand this error
+ublock-filters.js:2672 Blocked script execution in 'about:blank' because the document's frame is sandboxed and the 'allow-scripts' permission is not set.
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:13942
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:13947
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:13989
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:28415
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1973
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8170
+value @ custom-elements-es5-adapter.js:11
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8232
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7893
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1984
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3565
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3591
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36966
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36970Understand this error
+ublock-filters.js:2672 Blocked script execution in 'about:blank' because the document's frame is sandboxed and the 'allow-scripts' permission is not set.
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:13942
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:13947
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:13989
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:28415
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1973
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8170
+value @ custom-elements-es5-adapter.js:11
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8232
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7893
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1984
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3565
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3591
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36966
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36970Understand this error
+ublock-filters.js:1280  GET https://googleads.g.doubleclick.net/pagead/id net::ERR_UNSAFE_REDIRECT
+send @ ublock-filters.js:1280
+send @ ublock-filters.js:1280
+yYO @ m=kevlar_base_module,kevlar_main_module:1410
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1418
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:25002
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:6208
+UBF @ m=kevlar_base_module,kevlar_main_module:24999
+kpS @ m=kevlar_base_module,kevlar_main_module:25015
+ngS @ m=kevlar_base_module,kevlar_main_module:25971
+pq2 @ m=kevlar_base_module,kevlar_main_module:25430
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36812
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1968
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3585
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8176
+u @ m=kevlar_base_module,kevlar_main_module:7705
+h @ m=kevlar_base_module,kevlar_main_module:7744
+u @ m=kevlar_base_module,kevlar_main_module:7756
+h @ m=kevlar_base_module,kevlar_main_module:7774
+z @ m=kevlar_base_module,kevlar_main_module:7734
+h @ m=kevlar_base_module,kevlar_main_module:7846
+u @ m=kevlar_base_module,kevlar_main_module:7971
+h @ m=kevlar_base_module,kevlar_main_module:8107
+h @ m=kevlar_base_module,kevlar_main_module:8163
+z @ m=kevlar_base_module,kevlar_main_module:1966
+g @ custom-elements-es5-adapter.js:11
+value @ custom-elements-es5-adapter.js:11
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8232
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7893
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1984
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3565
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3591
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36966
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36970Understand this error
+content.js:1 Simple Autoscroll Loaded
+about:blank:1 Blocked script execution in 'about:blank' because the document's frame is sandboxed and the 'allow-scripts' permission is not set.Understand this error
+ryd.content-script.js:63  GET chrome-extension://gebbhagfogifgggkldgodflihgfeippi/menu-fixer.js net::ERR_FILE_NOT_FOUND
+(anonymous) @ ryd.content-script.js:63
+await in (anonymous)
+__webpack_require__.a @ ryd.content-script.js:113504
+805 @ ryd.content-script.js:8
+__webpack_require__ @ ryd.content-script.js:113447
+(anonymous) @ ryd.content-script.js:113556
+(anonymous) @ ryd.content-script.js:113558Understand this error
+ublock-filters.js:1280  POST https://www.youtube.com/youtubei/v1/log_event?alt=json net::ERR_BLOCKED_BY_CLIENT
+send @ ublock-filters.js:1280
+send @ ublock-filters.js:1280
+yYO @ m=kevlar_base_module,kevlar_main_module:1410
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1418
+bcX @ m=kevlar_base_module,kevlar_main_module:1416
+hv9 @ m=kevlar_base_module,kevlar_main_module:1604
+pUW @ m=kevlar_base_module,kevlar_main_module:1644
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7378
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+D3T @ m=kevlar_base_module,kevlar_main_module:7365
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+Promise.then
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:24994
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+gju @ m=kevlar_base_module,kevlar_main_module:24994
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1968
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3585
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8176
+u @ m=kevlar_base_module,kevlar_main_module:7705
+h @ m=kevlar_base_module,kevlar_main_module:7744
+u @ m=kevlar_base_module,kevlar_main_module:7756
+h @ m=kevlar_base_module,kevlar_main_module:7774
+z @ m=kevlar_base_module,kevlar_main_module:7734
+h @ m=kevlar_base_module,kevlar_main_module:7846
+u @ m=kevlar_base_module,kevlar_main_module:7971
+h @ m=kevlar_base_module,kevlar_main_module:8107
+h @ m=kevlar_base_module,kevlar_main_module:8163
+z @ m=kevlar_base_module,kevlar_main_module:1966
+g @ custom-elements-es5-adapter.js:11
+value @ custom-elements-es5-adapter.js:11
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8232
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7893
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1984
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3565
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3591
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36966
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36970Understand this error
+(index):1 Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.
+www.google.com/pagead/lvz?evtid=ACd6Kty-jMF3APK4dUtCzh8zcw9kcRkO7jjIGRCcsk9K7Uw5qpktvgLAV3cyzAOx5tjtvCbSVbPw6J0CVRr6o1jx8eAUHvaVJQ&req_ts=1774410424&pg=MainAppBootstrap%3AHome&az=1&sigh=AB9vU42lQ9sLVF7_Qjg7JebonY1szn4ASg:1  GET https://www.google.com/pagead/lvz?evtid=ACd6Kty-jMF3APK4dUtCzh8zcw9kcRkO7jjIGRCcsk9K7Uw5qpktvgLAV3cyzAOx5tjtvCbSVbPw6J0CVRr6o1jx8eAUHvaVJQ&req_ts=1774410424&pg=MainAppBootstrap%3AHome&az=1&sigh=AB9vU42lQ9sLVF7_Qjg7JebonY1szn4ASg net::ERR_BLOCKED_BY_CLIENT
+Image
+fCx @ m=kevlar_base_module,kevlar_main_module:1637
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1635
+cZF @ m=kevlar_base_module,kevlar_main_module:25428
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:44
+requestIdleCallback
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+D3T @ m=kevlar_base_module,kevlar_main_module:7365
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+Promise.then
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:24994
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+gju @ m=kevlar_base_module,kevlar_main_module:24994
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1968
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3585
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8176
+u @ m=kevlar_base_module,kevlar_main_module:7705
+h @ m=kevlar_base_module,kevlar_main_module:7744
+u @ m=kevlar_base_module,kevlar_main_module:7756
+h @ m=kevlar_base_module,kevlar_main_module:7774
+z @ m=kevlar_base_module,kevlar_main_module:7734
+h @ m=kevlar_base_module,kevlar_main_module:7846
+u @ m=kevlar_base_module,kevlar_main_module:7971
+h @ m=kevlar_base_module,kevlar_main_module:8107
+h @ m=kevlar_base_module,kevlar_main_module:8163
+z @ m=kevlar_base_module,kevlar_main_module:1966
+g @ custom-elements-es5-adapter.js:11
+value @ custom-elements-es5-adapter.js:11
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8232
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7893
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1984
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3565
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3591
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36966
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36970Understand this error
+/generate_204?Ggq-YQ:1  GET https://www.youtube.com/generate_204?Ggq-YQ net::ERR_BLOCKED_BY_CLIENT
+Image
+eval @ VM228:1
+be @ VM202:1
+wS @ VM187:1
+eval @ (index):1
+MF @ (index):1
+wV @ (index):1
+V @ (index):1
+eval @ (index):1
+requestIdleCallback.timeout @ (index):1
+requestIdleCallback
+ZK @ (index):1
+wV @ (index):1
+V @ (index):1
+eval @ (index):1
+requestIdleCallback.timeout @ (index):1
+requestIdleCallback
+ZK @ (index):1
+wV @ (index):1
+V @ (index):1
+eval @ (index):1
+requestIdleCallback.timeout @ (index):1
+requestIdleCallback
+ZK @ (index):1
+wV @ (index):1
+V @ (index):1
+eval @ (index):1
+requestIdleCallback.timeout @ (index):1
+requestIdleCallback
+ZK @ (index):1
+wV @ (index):1
+V @ (index):1
+eval @ (index):1
+requestIdleCallback.timeout @ (index):1
+requestIdleCallback
+ZK @ (index):1
+wV @ (index):1
+V @ (index):1
+o_ @ (index):1
+D @ (index):1
+XS.sRH_ @ (index):1
+h @ (index):1
+cF @ (index):1
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:6357
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:6388
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+Promise.then
+O @ m=kevlar_base_module,kevlar_main_module:5023
+Promise.then
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+yYT @ m=kevlar_base_module,kevlar_main_module:6384
+q4 @ m=kevlar_base_module,kevlar_main_module:6370
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:21663
+aZm @ m=kevlar_base_module,kevlar_main_module:21667
+VzT @ m=kevlar_base_module,kevlar_main_module:21677
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:4664
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:20376
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+bI1 @ m=kevlar_base_module,kevlar_main_module:20374
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:20373
+hXv @ m=kevlar_base_module,kevlar_main_module:20380
+callback @ m=kevlar_base_module,kevlar_main_module:21966
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7503
+xRX @ m=kevlar_base_module,kevlar_main_module:1682
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7503
+P @ scheduler.js:42
+O @ scheduler.js:37
+ta @ scheduler.js:59
+iJS @ m=kevlar_base_module,kevlar_main_module:7159
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7503
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7502
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:21687
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:21687
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7499
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:21984
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:21984
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36970Understand this error
+tpc.googlesyndication.com/simgad/16482456827810398670:1  GET https://tpc.googlesyndication.com/simgad/16482456827810398670 net::ERR_BLOCKED_BY_CLIENT
+Image
+C @ m=kevlar_base_module,kevlar_main_module:3320
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3318
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3317Understand this error
+ublock-filters.js:1280  POST https://www.youtube.com/youtubei/v1/log_event?alt=json net::ERR_BLOCKED_BY_CLIENT
+send @ ublock-filters.js:1280
+send @ ublock-filters.js:1280
+yYO @ m=kevlar_base_module,kevlar_main_module:1410
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1418
+hv9 @ m=kevlar_base_module,kevlar_main_module:1604
+pUW @ m=kevlar_base_module,kevlar_main_module:1644
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7378
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+attached @ m=kevlar_base_module,kevlar_main_module:12539
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1973
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8170
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12359
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:2526
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+jS @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3747
+insertBefore @ webcomponents-sd.js:64
+YTp @ m=kevlar_base_module,kevlar_main_module:12439
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12433
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7939
+Ylx @ m=kevlar_base_module,kevlar_main_module:1818
+characterData
+run @ m=kevlar_base_module,kevlar_main_module:7704
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7939
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7944
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12430
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1192
+lB9 @ m=kevlar_base_module,kevlar_main_module:1171
+PkS @ m=kevlar_base_module,kevlar_main_module:1192
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7031
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7027
+ABs @ m=kevlar_base_module,kevlar_main_module:1185
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1219
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12322
+STl @ m=kevlar_base_module,kevlar_main_module:12321
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12322
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12430
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+attachShadow @ webcomponents-sd.js:95
+(anonymous) @ webcomponents-sd.js:123
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12389
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+cnb @ m=kevlar_base_module,kevlar_main_module:12377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12379
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:2526
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+jS @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+insertBefore @ webcomponents-sd.js:64
+appendChild @ webcomponents-sd.js:65
+(anonymous) @ webcomponents-sd.js:121
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+stampDomArray_ @ m=kevlar_base_module,kevlar_main_module:12614
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12605
+z @ m=kevlar_base_module,kevlar_main_module:12592
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+na @ scheduler.js:49
+(anonymous) @ scheduler.js:46
+setTimeout
+apply @ ublock-filters.js:899
+(anonymous) @ scheduler.js:52
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:44
+requestIdleCallback
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+D3T @ m=kevlar_base_module,kevlar_main_module:7365
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+Promise.then
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:24994
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+gju @ m=kevlar_base_module,kevlar_main_module:24994
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1968
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3585
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8176
+u @ m=kevlar_base_module,kevlar_main_module:7705
+h @ m=kevlar_base_module,kevlar_main_module:7744
+u @ m=kevlar_base_module,kevlar_main_module:7756
+h @ m=kevlar_base_module,kevlar_main_module:7774
+z @ m=kevlar_base_module,kevlar_main_module:7734
+h @ m=kevlar_base_module,kevlar_main_module:7846
+u @ m=kevlar_base_module,kevlar_main_module:7971
+h @ m=kevlar_base_module,kevlar_main_module:8107
+h @ m=kevlar_base_module,kevlar_main_module:8163
+z @ m=kevlar_base_module,kevlar_main_module:1966
+g @ custom-elements-es5-adapter.js:11
+value @ custom-elements-es5-adapter.js:11
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8232
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7893
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1984
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3565
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3591
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36966
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36970Understand this error
+ublock-filters.js:1280  POST https://www.youtube.com/youtubei/v1/log_event?alt=json net::ERR_BLOCKED_BY_CLIENT
+send @ ublock-filters.js:1280
+send @ ublock-filters.js:1280
+yYO @ m=kevlar_base_module,kevlar_main_module:1410
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1418
+hv9 @ m=kevlar_base_module,kevlar_main_module:1604
+pUW @ m=kevlar_base_module,kevlar_main_module:1644
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7378
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+attached @ m=kevlar_base_module,kevlar_main_module:12539
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1973
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8170
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12359
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:2526
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+jS @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3747
+insertBefore @ webcomponents-sd.js:64
+YTp @ m=kevlar_base_module,kevlar_main_module:12439
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12433
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7939
+Ylx @ m=kevlar_base_module,kevlar_main_module:1818
+characterData
+run @ m=kevlar_base_module,kevlar_main_module:7704
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7939
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7944
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12430
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1192
+lB9 @ m=kevlar_base_module,kevlar_main_module:1171
+PkS @ m=kevlar_base_module,kevlar_main_module:1192
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7031
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7027
+ABs @ m=kevlar_base_module,kevlar_main_module:1185
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1219
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12322
+STl @ m=kevlar_base_module,kevlar_main_module:12321
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12322
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12430
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+attachShadow @ webcomponents-sd.js:95
+(anonymous) @ webcomponents-sd.js:123
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12389
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+cnb @ m=kevlar_base_module,kevlar_main_module:12377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12379
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:2526
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+jS @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+insertBefore @ webcomponents-sd.js:64
+appendChild @ webcomponents-sd.js:65
+(anonymous) @ webcomponents-sd.js:121
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+stampDomArray_ @ m=kevlar_base_module,kevlar_main_module:12614
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12605
+z @ m=kevlar_base_module,kevlar_main_module:12592
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+na @ scheduler.js:49
+(anonymous) @ scheduler.js:46
+setTimeout
+apply @ ublock-filters.js:899
+(anonymous) @ scheduler.js:52
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:44
+requestIdleCallback
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+D3T @ m=kevlar_base_module,kevlar_main_module:7365
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+Promise.then
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:24994
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+gju @ m=kevlar_base_module,kevlar_main_module:24994
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1968
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3585
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8176
+u @ m=kevlar_base_module,kevlar_main_module:7705
+h @ m=kevlar_base_module,kevlar_main_module:7744
+u @ m=kevlar_base_module,kevlar_main_module:7756
+h @ m=kevlar_base_module,kevlar_main_module:7774
+z @ m=kevlar_base_module,kevlar_main_module:7734
+h @ m=kevlar_base_module,kevlar_main_module:7846
+u @ m=kevlar_base_module,kevlar_main_module:7971
+h @ m=kevlar_base_module,kevlar_main_module:8107
+h @ m=kevlar_base_module,kevlar_main_module:8163
+z @ m=kevlar_base_module,kevlar_main_module:1966
+g @ custom-elements-es5-adapter.js:11
+value @ custom-elements-es5-adapter.js:11
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8232
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7893
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1984
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3565
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3591
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36966
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36970Understand this error
+ublock-filters.js:1280  POST https://www.youtube.com/youtubei/v1/log_event?alt=json net::ERR_BLOCKED_BY_CLIENT
+send @ ublock-filters.js:1280
+send @ ublock-filters.js:1280
+yYO @ m=kevlar_base_module,kevlar_main_module:1410
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1418
+bcX @ m=kevlar_base_module,kevlar_main_module:1416
+hv9 @ m=kevlar_base_module,kevlar_main_module:1604
+pUW @ m=kevlar_base_module,kevlar_main_module:1644
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7378
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7366
+Promise.then
+apply @ (index):21
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7366
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7448
+N @ m=kevlar_base_module,kevlar_main_module:7462
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7464
+Promise.then
+apply @ (index):21
+THO @ m=kevlar_base_module,kevlar_main_module:7464
+UR2 @ m=kevlar_base_module,kevlar_main_module:1707
+qV2 @ m=kevlar_base_module,kevlar_main_module:1698
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1696
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:6208
+c1S @ m=kevlar_base_module,kevlar_main_module:1695
+A @ m=kevlar_base_module,kevlar_main_module:1690
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1691
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:44
+requestIdleCallback
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+attached @ m=kevlar_base_module,kevlar_main_module:12539
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1973
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8170
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12359
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:2526
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+jS @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3747
+insertBefore @ webcomponents-sd.js:64
+YTp @ m=kevlar_base_module,kevlar_main_module:12439
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12433
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7939
+Ylx @ m=kevlar_base_module,kevlar_main_module:1818
+characterData
+run @ m=kevlar_base_module,kevlar_main_module:7704
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7939
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7944
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12430
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1192
+lB9 @ m=kevlar_base_module,kevlar_main_module:1171
+PkS @ m=kevlar_base_module,kevlar_main_module:1192
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7031
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7027
+ABs @ m=kevlar_base_module,kevlar_main_module:1185
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1219
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12322
+STl @ m=kevlar_base_module,kevlar_main_module:12321
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12322
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12430
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+attachShadow @ webcomponents-sd.js:95
+(anonymous) @ webcomponents-sd.js:123
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12389
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+cnb @ m=kevlar_base_module,kevlar_main_module:12377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12379
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:2526
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+jS @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+insertBefore @ webcomponents-sd.js:64
+appendChild @ webcomponents-sd.js:65
+(anonymous) @ webcomponents-sd.js:121
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+stampDomArray_ @ m=kevlar_base_module,kevlar_main_module:12614
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12605
+z @ m=kevlar_base_module,kevlar_main_module:12592
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+na @ scheduler.js:49
+(anonymous) @ scheduler.js:46
+setTimeout
+apply @ ublock-filters.js:899
+(anonymous) @ scheduler.js:52
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:44
+requestIdleCallback
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+D3T @ m=kevlar_base_module,kevlar_main_module:7365
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+Promise.then
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:24994
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+gju @ m=kevlar_base_module,kevlar_main_module:24994
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1968
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3585
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8176
+u @ m=kevlar_base_module,kevlar_main_module:7705
+h @ m=kevlar_base_module,kevlar_main_module:7744
+u @ m=kevlar_base_module,kevlar_main_module:7756
+h @ m=kevlar_base_module,kevlar_main_module:7774
+z @ m=kevlar_base_module,kevlar_main_module:7734
+h @ m=kevlar_base_module,kevlar_main_module:7846
+u @ m=kevlar_base_module,kevlar_main_module:7971
+h @ m=kevlar_base_module,kevlar_main_module:8107
+h @ m=kevlar_base_module,kevlar_main_module:8163
+z @ m=kevlar_base_module,kevlar_main_module:1966
+g @ custom-elements-es5-adapter.js:11
+value @ custom-elements-es5-adapter.js:11
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8232
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7893
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1984
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3565
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3591
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36966
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36970Understand this error
+ublock-filters.js:1280  POST https://www.youtube.com/youtubei/v1/log_event?alt=json net::ERR_BLOCKED_BY_CLIENT
+send @ ublock-filters.js:1280
+send @ ublock-filters.js:1280
+yYO @ m=kevlar_base_module,kevlar_main_module:1410
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1418
+hv9 @ m=kevlar_base_module,kevlar_main_module:1604
+pUW @ m=kevlar_base_module,kevlar_main_module:1644
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7378
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+attached @ m=kevlar_base_module,kevlar_main_module:12539
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1973
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8170
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12359
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:2526
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+jS @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3747
+insertBefore @ webcomponents-sd.js:64
+YTp @ m=kevlar_base_module,kevlar_main_module:12439
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12433
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7939
+Ylx @ m=kevlar_base_module,kevlar_main_module:1818
+characterData
+run @ m=kevlar_base_module,kevlar_main_module:7704
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7939
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7944
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12430
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1192
+lB9 @ m=kevlar_base_module,kevlar_main_module:1171
+PkS @ m=kevlar_base_module,kevlar_main_module:1192
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7031
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7027
+ABs @ m=kevlar_base_module,kevlar_main_module:1185
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1219
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12322
+STl @ m=kevlar_base_module,kevlar_main_module:12321
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12322
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12430
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+attachShadow @ webcomponents-sd.js:95
+(anonymous) @ webcomponents-sd.js:123
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12389
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+cnb @ m=kevlar_base_module,kevlar_main_module:12377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12379
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:2526
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+jS @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+insertBefore @ webcomponents-sd.js:64
+appendChild @ webcomponents-sd.js:65
+(anonymous) @ webcomponents-sd.js:121
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+stampDomArray_ @ m=kevlar_base_module,kevlar_main_module:12614
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12605
+z @ m=kevlar_base_module,kevlar_main_module:12592
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+na @ scheduler.js:49
+(anonymous) @ scheduler.js:46
+setTimeout
+apply @ ublock-filters.js:899
+(anonymous) @ scheduler.js:52
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:44
+requestIdleCallback
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+D3T @ m=kevlar_base_module,kevlar_main_module:7365
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+Promise.then
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:24994
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+gju @ m=kevlar_base_module,kevlar_main_module:24994
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1968
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3585
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8176
+u @ m=kevlar_base_module,kevlar_main_module:7705
+h @ m=kevlar_base_module,kevlar_main_module:7744
+u @ m=kevlar_base_module,kevlar_main_module:7756
+h @ m=kevlar_base_module,kevlar_main_module:7774
+z @ m=kevlar_base_module,kevlar_main_module:7734
+h @ m=kevlar_base_module,kevlar_main_module:7846
+u @ m=kevlar_base_module,kevlar_main_module:7971
+h @ m=kevlar_base_module,kevlar_main_module:8107
+h @ m=kevlar_base_module,kevlar_main_module:8163
+z @ m=kevlar_base_module,kevlar_main_module:1966
+g @ custom-elements-es5-adapter.js:11
+value @ custom-elements-es5-adapter.js:11
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8232
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7893
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1984
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3565
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3591
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36966
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36970Understand this error
+custom-elements-es5-adapter.js:11 Uncaught Error: Constructing vsc-controller: TypeError: Class constructor _VSCControllerElement cannot be invoked without 'new'
+    at new g (custom-elements-es5-adapter.js:11:150)
+    at VideoController.initializeControls (inject.js:2182:33)
+    at new VideoController (inject.js:2139:23)
+    at VideoSpeedExtension.onVideoFound (inject.js:3531:21)
+    at VideoMutationObserver.onVideoFound (inject.js:3506:33)
+    at VideoMutationObserver.checkForVideoAndShadowRoot (inject.js:1656:16)
+    at VideoMutationObserver.processNodeChildren (inject.js:1683:14)
+    at VideoMutationObserver.checkForVideoAndShadowRoot (inject.js:1663:14)
+    at VideoMutationObserver.processNodeChildren (inject.js:1683:14)
+    at VideoMutationObserver.checkForVideoAndShadowRoot (inject.js:1663:14)
+    at inject.js:1570:14
+    at NodeList.forEach (<anonymous>)
+    at VideoMutationObserver.processChildListMutation (inject.js:1561:27)
+    at inject.js:1547:18
+    at Array.forEach (<anonymous>)
+    at VideoMutationObserver.processMutations (inject.js:1544:17)
+    at requestIdleCallback.timeout (inject.js:1525:18)
+g @ custom-elements-es5-adapter.js:11
+initializeControls @ inject.js:2182
+VideoController @ inject.js:2139
+onVideoFound @ inject.js:3531
+(anonymous) @ inject.js:3506
+checkForVideoAndShadowRoot @ inject.js:1656
+processNodeChildren @ inject.js:1683
+checkForVideoAndShadowRoot @ inject.js:1663
+processNodeChildren @ inject.js:1683
+checkForVideoAndShadowRoot @ inject.js:1663
+(anonymous) @ inject.js:1570
+processChildListMutation @ inject.js:1561
+(anonymous) @ inject.js:1547
+processMutations @ inject.js:1544
+requestIdleCallback.timeout @ inject.js:1525
+requestIdleCallback
+(anonymous) @ inject.js:1523
+childList
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+callback @ m=kevlar_base_module,kevlar_main_module:21802
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7509
+xRX @ m=kevlar_base_module,kevlar_main_module:1682
+job @ m=kevlar_base_module,kevlar_main_module:7509
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7488
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:44
+requestIdleCallback
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:44
+requestIdleCallback
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+attached @ m=kevlar_base_module,kevlar_main_module:12539
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1973
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8170
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12359
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:2526
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+jS @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3747
+insertBefore @ webcomponents-sd.js:64
+YTp @ m=kevlar_base_module,kevlar_main_module:12439
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12433
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7939
+Ylx @ m=kevlar_base_module,kevlar_main_module:1818
+characterData
+run @ m=kevlar_base_module,kevlar_main_module:7704
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7939
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7944
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12430
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1192
+lB9 @ m=kevlar_base_module,kevlar_main_module:1171
+PkS @ m=kevlar_base_module,kevlar_main_module:1192
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7031
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7027
+ABs @ m=kevlar_base_module,kevlar_main_module:1185
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1219
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12322
+STl @ m=kevlar_base_module,kevlar_main_module:12321
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12322
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12430
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+attachShadow @ webcomponents-sd.js:95
+(anonymous) @ webcomponents-sd.js:123
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12389
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+cnb @ m=kevlar_base_module,kevlar_main_module:12377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12379
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:2526
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+jS @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+insertBefore @ webcomponents-sd.js:64
+appendChild @ webcomponents-sd.js:65
+(anonymous) @ webcomponents-sd.js:121
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+stampDomArray_ @ m=kevlar_base_module,kevlar_main_module:12614
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12605
+z @ m=kevlar_base_module,kevlar_main_module:12592
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+na @ scheduler.js:49
+(anonymous) @ scheduler.js:46
+setTimeout
+apply @ ublock-filters.js:899
+(anonymous) @ scheduler.js:52
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:44
+requestIdleCallback
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+D3T @ m=kevlar_base_module,kevlar_main_module:7365
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+Promise.then
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:24994
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+gju @ m=kevlar_base_module,kevlar_main_module:24994
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1968
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3585
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8176
+u @ m=kevlar_base_module,kevlar_main_module:7705
+h @ m=kevlar_base_module,kevlar_main_module:7744
+u @ m=kevlar_base_module,kevlar_main_module:7756
+h @ m=kevlar_base_module,kevlar_main_module:7774
+z @ m=kevlar_base_module,kevlar_main_module:7734
+h @ m=kevlar_base_module,kevlar_main_module:7846
+u @ m=kevlar_base_module,kevlar_main_module:7971
+h @ m=kevlar_base_module,kevlar_main_module:8107
+h @ m=kevlar_base_module,kevlar_main_module:8163
+z @ m=kevlar_base_module,kevlar_main_module:1966
+g @ custom-elements-es5-adapter.js:11
+value @ custom-elements-es5-adapter.js:11
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8232
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7893
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1984
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3565
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3591
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36966
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36970Understand this error
+m=kevlar_base_module,kevlar_main_module:3747  GET https://static.doubleclick.net/instream/ad_status.js net::ERR_UNSAFE_REDIRECT
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3747
+jhA @ base.js:1655
+Rzt @ base.js:1652
+(anonymous) @ base.js:1651
+dz9 @ base.js:2193
+(anonymous) @ base.js:5360
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:44
+requestIdleCallback
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+Qj @ base.js:1458
+RP @ base.js:6060
+DfY @ base.js:1552
+Ufn @ base.js:1554
+await in Ufn
+(anonymous) @ base.js:8177
+create @ base.js:8185
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:13739
+wfb @ m=kevlar_base_module,kevlar_main_module:13740
+oW @ m=kevlar_base_module,kevlar_main_module:13730
+$P9 @ m=kevlar_base_module,kevlar_main_module:4035
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:13834
+initPlayer_ @ m=kevlar_base_module,kevlar_main_module:13834
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:13829
+Promise.then
+apply @ (index):21
+initPlayerContainer_ @ m=kevlar_base_module,kevlar_main_module:13829
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:13847
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:44
+requestIdleCallback
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:44
+requestIdleCallback
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+attached @ m=kevlar_base_module,kevlar_main_module:12539
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1973
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8170
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12359
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:2526
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+jS @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3747
+insertBefore @ webcomponents-sd.js:64
+YTp @ m=kevlar_base_module,kevlar_main_module:12439
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12433
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7939
+Ylx @ m=kevlar_base_module,kevlar_main_module:1818
+characterData
+run @ m=kevlar_base_module,kevlar_main_module:7704
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7939
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7944
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12430
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1192
+lB9 @ m=kevlar_base_module,kevlar_main_module:1171
+PkS @ m=kevlar_base_module,kevlar_main_module:1192
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7031
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7027
+ABs @ m=kevlar_base_module,kevlar_main_module:1185
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1219
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12322
+STl @ m=kevlar_base_module,kevlar_main_module:12321
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12322
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12430
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+attachShadow @ webcomponents-sd.js:95
+(anonymous) @ webcomponents-sd.js:123
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12389
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+cnb @ m=kevlar_base_module,kevlar_main_module:12377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12379
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:2526
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+jS @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+insertBefore @ webcomponents-sd.js:64
+appendChild @ webcomponents-sd.js:65
+(anonymous) @ webcomponents-sd.js:121
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+stampDomArray_ @ m=kevlar_base_module,kevlar_main_module:12614
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12605
+z @ m=kevlar_base_module,kevlar_main_module:12592
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+na @ scheduler.js:49
+(anonymous) @ scheduler.js:46
+setTimeout
+apply @ ublock-filters.js:899
+(anonymous) @ scheduler.js:52
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:44
+requestIdleCallback
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+D3T @ m=kevlar_base_module,kevlar_main_module:7365
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+Promise.then
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:24994
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+gju @ m=kevlar_base_module,kevlar_main_module:24994
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1968
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3585
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8176
+u @ m=kevlar_base_module,kevlar_main_module:7705
+h @ m=kevlar_base_module,kevlar_main_module:7744
+u @ m=kevlar_base_module,kevlar_main_module:7756
+h @ m=kevlar_base_module,kevlar_main_module:7774
+z @ m=kevlar_base_module,kevlar_main_module:7734
+h @ m=kevlar_base_module,kevlar_main_module:7846
+u @ m=kevlar_base_module,kevlar_main_module:7971
+h @ m=kevlar_base_module,kevlar_main_module:8107
+h @ m=kevlar_base_module,kevlar_main_module:8163
+z @ m=kevlar_base_module,kevlar_main_module:1966
+g @ custom-elements-es5-adapter.js:11
+value @ custom-elements-es5-adapter.js:11
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8232
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7893
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1984
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3565
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3591
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36966
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36970Understand this error
+ublock-filters.js:1280  POST https://www.youtube.com/youtubei/v1/log_event?alt=json net::ERR_BLOCKED_BY_CLIENT
+send @ ublock-filters.js:1280
+send @ ublock-filters.js:1280
+yYO @ m=kevlar_base_module,kevlar_main_module:1410
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1418
+hv9 @ m=kevlar_base_module,kevlar_main_module:1604
+pUW @ m=kevlar_base_module,kevlar_main_module:1644
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7378
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+attached @ m=kevlar_base_module,kevlar_main_module:12539
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1973
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8170
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12359
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:2526
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+jS @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3747
+insertBefore @ webcomponents-sd.js:64
+YTp @ m=kevlar_base_module,kevlar_main_module:12439
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12433
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7939
+Ylx @ m=kevlar_base_module,kevlar_main_module:1818
+characterData
+run @ m=kevlar_base_module,kevlar_main_module:7704
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7939
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7944
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12430
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1192
+lB9 @ m=kevlar_base_module,kevlar_main_module:1171
+PkS @ m=kevlar_base_module,kevlar_main_module:1192
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7031
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7027
+ABs @ m=kevlar_base_module,kevlar_main_module:1185
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1219
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12322
+STl @ m=kevlar_base_module,kevlar_main_module:12321
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12322
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12430
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+attachShadow @ webcomponents-sd.js:95
+(anonymous) @ webcomponents-sd.js:123
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12389
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+cnb @ m=kevlar_base_module,kevlar_main_module:12377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12379
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:2526
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+jS @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+insertBefore @ webcomponents-sd.js:64
+appendChild @ webcomponents-sd.js:65
+(anonymous) @ webcomponents-sd.js:121
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+stampDomArray_ @ m=kevlar_base_module,kevlar_main_module:12614
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12605
+z @ m=kevlar_base_module,kevlar_main_module:12592
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+na @ scheduler.js:49
+(anonymous) @ scheduler.js:46
+setTimeout
+apply @ ublock-filters.js:899
+(anonymous) @ scheduler.js:52
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:44
+requestIdleCallback
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+D3T @ m=kevlar_base_module,kevlar_main_module:7365
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+Promise.then
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:24994
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+gju @ m=kevlar_base_module,kevlar_main_module:24994
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1968
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3585
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8176
+u @ m=kevlar_base_module,kevlar_main_module:7705
+h @ m=kevlar_base_module,kevlar_main_module:7744
+u @ m=kevlar_base_module,kevlar_main_module:7756
+h @ m=kevlar_base_module,kevlar_main_module:7774
+z @ m=kevlar_base_module,kevlar_main_module:7734
+h @ m=kevlar_base_module,kevlar_main_module:7846
+u @ m=kevlar_base_module,kevlar_main_module:7971
+h @ m=kevlar_base_module,kevlar_main_module:8107
+h @ m=kevlar_base_module,kevlar_main_module:8163
+z @ m=kevlar_base_module,kevlar_main_module:1966
+g @ custom-elements-es5-adapter.js:11
+value @ custom-elements-es5-adapter.js:11
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8232
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7893
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1984
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3565
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3591
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36966
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36970Understand this error
+ublock-filters.js:1280  POST https://www.youtube.com/youtubei/v1/log_event?alt=json net::ERR_BLOCKED_BY_CLIENT
+send @ ublock-filters.js:1280
+send @ ublock-filters.js:1280
+yYO @ m=kevlar_base_module,kevlar_main_module:1410
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1418
+bcX @ m=kevlar_base_module,kevlar_main_module:1416
+hv9 @ m=kevlar_base_module,kevlar_main_module:1604
+pUW @ m=kevlar_base_module,kevlar_main_module:1644
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7378
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+Promise.then
+apply @ (index):21
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+attached @ m=kevlar_base_module,kevlar_main_module:12539
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1973
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8170
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12359
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:2526
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+jS @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3747
+insertBefore @ webcomponents-sd.js:64
+YTp @ m=kevlar_base_module,kevlar_main_module:12439
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12433
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7939
+Ylx @ m=kevlar_base_module,kevlar_main_module:1818
+characterData
+run @ m=kevlar_base_module,kevlar_main_module:7704
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7939
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7944
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12430
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1192
+lB9 @ m=kevlar_base_module,kevlar_main_module:1171
+PkS @ m=kevlar_base_module,kevlar_main_module:1192
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7031
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7027
+ABs @ m=kevlar_base_module,kevlar_main_module:1185
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1219
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12322
+STl @ m=kevlar_base_module,kevlar_main_module:12321
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12322
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12430
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+reflect @ ublock-filters.js:2672
+(anonymous) @ ublock-filters.js:3422
+apply @ ublock-filters.js:2705
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+attachShadow @ webcomponents-sd.js:95
+(anonymous) @ webcomponents-sd.js:123
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12389
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+cnb @ m=kevlar_base_module,kevlar_main_module:12377
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12379
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:2526
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1154
+jS @ m=kevlar_base_module,kevlar_main_module:3744
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+insertBefore @ webcomponents-sd.js:64
+appendChild @ webcomponents-sd.js:65
+(anonymous) @ webcomponents-sd.js:121
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3748
+stampDomArray_ @ m=kevlar_base_module,kevlar_main_module:12614
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:12605
+z @ m=kevlar_base_module,kevlar_main_module:12592
+P @ scheduler.js:42
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+na @ scheduler.js:49
+(anonymous) @ scheduler.js:46
+setTimeout
+apply @ ublock-filters.js:899
+(anonymous) @ scheduler.js:52
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:44
+requestIdleCallback
+(anonymous) @ scheduler.js:52
+V @ scheduler.js:51
+(anonymous) @ scheduler.js:47
+(anonymous) @ web-animations-next-lite.min.js:96
+requestAnimationFrame
+(anonymous) @ web-animations-next-lite.min.js:96
+(anonymous) @ scheduler.js:52
+Q @ scheduler.js:38
+(anonymous) @ scheduler.js:57
+setTimeout
+apply @ ublock-filters.js:899
+sa @ scheduler.js:57
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7164
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7155
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7375
+D3T @ m=kevlar_base_module,kevlar_main_module:7365
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+Promise.then
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7446
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:24994
+E_p @ m=kevlar_base_module,kevlar_main_module:5015
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5016
+u @ m=kevlar_base_module,kevlar_main_module:5021
+Promise.then
+O @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5024
+Btl @ m=kevlar_base_module,kevlar_main_module:5023
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:5025
+gju @ m=kevlar_base_module,kevlar_main_module:24994
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1811
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1968
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3585
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8176
+u @ m=kevlar_base_module,kevlar_main_module:7705
+h @ m=kevlar_base_module,kevlar_main_module:7744
+u @ m=kevlar_base_module,kevlar_main_module:7756
+h @ m=kevlar_base_module,kevlar_main_module:7774
+z @ m=kevlar_base_module,kevlar_main_module:7734
+h @ m=kevlar_base_module,kevlar_main_module:7846
+u @ m=kevlar_base_module,kevlar_main_module:7971
+h @ m=kevlar_base_module,kevlar_main_module:8107
+h @ m=kevlar_base_module,kevlar_main_module:8163
+z @ m=kevlar_base_module,kevlar_main_module:1966
+g @ custom-elements-es5-adapter.js:11
+value @ custom-elements-es5-adapter.js:11
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:8232
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:7893
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:1984
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3565
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:3591
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36966
+(anonymous) @ m=kevlar_base_module,kevlar_main_module:36970Understand this error
+(index):1 The resource https://i.ytimg.com/generate_204 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally.Understand this warning

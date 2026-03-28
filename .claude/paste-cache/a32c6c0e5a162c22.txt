@@ -1,0 +1,65 @@
+----- post-test output end -----
+policy_document_audit_log RLS - Regular MEMBER cannot read audit logs ... ok (480ms)
+ ERRORS 
+GET /list-available-workflows - returns accessible workflows => ./supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:17:6
+error: AssertionError: Values are not equal: Should return 200 OK
+    [Diff] Actual / Expected
+-   404
++   200
+  throw new AssertionError(message);
+        ^
+    at assertEquals (https://jsr.io/@std/assert/1.0.19/equals.ts:67:9)
+    at file:///home/runner/_work/quartz-supabase/quartz-supabase/supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:40:4
+GET /list-available-workflows - includes active run status => ./supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:52:6
+error: AssertionError: Values are not equal.
+    [Diff] Actual / Expected
+-   404
++   200
+  throw new AssertionError(message);
+        ^
+    at assertEquals (https://jsr.io/@std/assert/1.0.19/equals.ts:67:9)
+    at file:///home/runner/_work/quartz-supabase/quartz-supabase/supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:79:4
+GET /list-available-workflows - no active run returns null fields => ./supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:96:6
+error: AssertionError: Values are not equal.
+    [Diff] Actual / Expected
+-   404
++   200
+  throw new AssertionError(message);
+        ^
+    at assertEquals (https://jsr.io/@std/assert/1.0.19/equals.ts:67:9)
+    at file:///home/runner/_work/quartz-supabase/quartz-supabase/supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:114:4
+GET /list-available-workflows - filters out non-ad-hoc workflows => ./supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:127:6
+error: AssertionError: Values are not equal.
+    [Diff] Actual / Expected
+-   404
++   200
+  throw new AssertionError(message);
+        ^
+    at assertEquals (https://jsr.io/@std/assert/1.0.19/equals.ts:67:9)
+    at file:///home/runner/_work/quartz-supabase/quartz-supabase/supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:153:4
+GET /list-available-workflows - respects department assignee access rules => ./supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:166:6
+error: AssertionError: Values are not equal.
+    [Diff] Actual / Expected
+-   404
++   200
+  throw new AssertionError(message);
+        ^
+    at assertEquals (https://jsr.io/@std/assert/1.0.19/equals.ts:67:9)
+    at file:///home/runner/_work/quartz-supabase/quartz-supabase/supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:205:4
+GET /list-available-workflows - completed runs are not counted as active => ./supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:239:6
+error: AssertionError: Values are not equal.
+    [Diff] Actual / Expected
+-   404
++   200
+  throw new AssertionError(message);
+        ^
+    at assertEquals (https://jsr.io/@std/assert/1.0.19/equals.ts:67:9)
+    at file:///home/runner/_work/quartz-supabase/quartz-supabase/supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:266:4
+ FAILURES 
+GET /list-available-workflows - returns accessible workflows => ./supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:17:6
+GET /list-available-workflows - includes active run status => ./supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:52:6
+GET /list-available-workflows - no active run returns null fields => ./supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:96:6
+GET /list-available-workflows - filters out non-ad-hoc workflows => ./supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:127:6
+GET /list-available-workflows - respects department assignee access rules => ./supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:166:6
+GET /list-available-workflows - completed runs are not counted as active => ./supabase/tests/integration/listAvailableWorkflows/endpoints.test.ts:239:6
+FAILED | 625 passed (107 steps) | 6 failed | 19 ignored (9m32s)

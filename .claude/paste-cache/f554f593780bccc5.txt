@@ -1,0 +1,127 @@
+16s
+Run pnpm --filter ui build
+
+> ui@0.0.0 build /home/runner/work/somethinginc-app/somethinginc-app/apps/ui
+> tsc -b && vite build
+
+Error: src/components/competitors/prompt-coverage-matrix.tsx(157,7): error TS2322: Type 'AccessorKeyColumnDef<PromptCoverageRow, string>' is not assignable to type 'ColumnDef<PromptCoverageRow, unknown>'.
+  Type 'AccessorKeyColumnDefBase<PromptCoverageRow, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'ColumnDef<PromptCoverageRow, unknown>'.
+    Type 'AccessorKeyColumnDefBase<PromptCoverageRow, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<PromptCoverageRow, unknown> & Partial<IdIdentifier<PromptCoverageRow, unknown>>'.
+      Type 'AccessorKeyColumnDefBase<PromptCoverageRow, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<PromptCoverageRow, unknown>'.
+        Types of property 'cell' are incompatible.
+          Type 'ColumnDefTemplate<CellContext<PromptCoverageRow, string>> | undefined' is not assignable to type 'ColumnDefTemplate<CellContext<PromptCoverageRow, unknown>> | undefined'.
+            Type '(props: CellContext<PromptCoverageRow, string>) => any' is not assignable to type 'ColumnDefTemplate<CellContext<PromptCoverageRow, unknown>> | undefined'.
+              Type '(props: CellContext<PromptCoverageRow, string>) => any' is not assignable to type '(props: CellContext<PromptCoverageRow, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'CellContext<PromptCoverageRow, unknown>' is not assignable to type 'CellContext<PromptCoverageRow, string>'.
+                    The types of 'cell.column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<PromptCoverageRow, unknown> | undefined' is not assignable to type 'AccessorFn<PromptCoverageRow, string> | undefined'.
+                        Type 'AccessorFn<PromptCoverageRow, unknown>' is not assignable to type 'AccessorFn<PromptCoverageRow, string>'.
+                          Type 'unknown' is not assignable to type 'string'.
+Error: src/components/platform-performance-table.tsx(234,7): error TS2345: Argument of type 'AccessorKeyColumnDef<PlatformStat, number>' is not assignable to parameter of type 'ColumnDef<PlatformStat, unknown>'.
+  Type 'AccessorKeyColumnDefBase<PlatformStat, number> & Partial<StringHeaderIdentifier>' is not assignable to type 'ColumnDef<PlatformStat, unknown>'.
+    Type 'AccessorKeyColumnDefBase<PlatformStat, number> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<PlatformStat, unknown> & Partial<IdIdentifier<PlatformStat, unknown>>'.
+      Type 'AccessorKeyColumnDefBase<PlatformStat, number> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<PlatformStat, unknown>'.
+        Types of property 'cell' are incompatible.
+          Type 'ColumnDefTemplate<CellContext<PlatformStat, number>> | undefined' is not assignable to type 'ColumnDefTemplate<CellContext<PlatformStat, unknown>> | undefined'.
+            Type '(props: CellContext<PlatformStat, number>) => any' is not assignable to type 'ColumnDefTemplate<CellContext<PlatformStat, unknown>> | undefined'.
+              Type '(props: CellContext<PlatformStat, number>) => any' is not assignable to type '(props: CellContext<PlatformStat, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'CellContext<PlatformStat, unknown>' is not assignable to type 'CellContext<PlatformStat, number>'.
+                    The types of 'cell.column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<PlatformStat, unknown> | undefined' is not assignable to type 'AccessorFn<PlatformStat, number> | undefined'.
+                        Type 'AccessorFn<PlatformStat, unknown>' is not assignable to type 'AccessorFn<PlatformStat, number>'.
+                          Type 'unknown' is not assignable to type 'number'.
+Error: src/components/sources/source-detail-urls-table.tsx(101,7): error TS2322: Type 'AccessorKeyColumnDef<SourceUrlRow, string>' is not assignable to type 'ColumnDef<SourceUrlRow, unknown>'.
+  Type 'AccessorKeyColumnDefBase<SourceUrlRow, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'ColumnDef<SourceUrlRow, unknown>'.
+    Type 'AccessorKeyColumnDefBase<SourceUrlRow, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<SourceUrlRow, unknown> & Partial<IdIdentifier<SourceUrlRow, unknown>>'.
+      Type 'AccessorKeyColumnDefBase<SourceUrlRow, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<SourceUrlRow, unknown>'.
+        Types of property 'cell' are incompatible.
+          Type 'ColumnDefTemplate<CellContext<SourceUrlRow, string>> | undefined' is not assignable to type 'ColumnDefTemplate<CellContext<SourceUrlRow, unknown>> | undefined'.
+            Type '(props: CellContext<SourceUrlRow, string>) => any' is not assignable to type 'ColumnDefTemplate<CellContext<SourceUrlRow, unknown>> | undefined'.
+              Type '(props: CellContext<SourceUrlRow, string>) => any' is not assignable to type '(props: CellContext<SourceUrlRow, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'CellContext<SourceUrlRow, unknown>' is not assignable to type 'CellContext<SourceUrlRow, string>'.
+                    The types of 'cell.column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<SourceUrlRow, unknown> | undefined' is not assignable to type 'AccessorFn<SourceUrlRow, string> | undefined'.
+                        Type 'AccessorFn<SourceUrlRow, unknown>' is not assignable to type 'AccessorFn<SourceUrlRow, string>'.
+                          Type 'unknown' is not assignable to type 'string'.
+Error: src/components/sources/source-detail-urls-table.tsx(118,7): error TS2322: Type 'AccessorKeyColumnDef<SourceUrlRow, string>' is not assignable to type 'ColumnDef<SourceUrlRow, unknown>'.
+  Type 'AccessorKeyColumnDefBase<SourceUrlRow, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'ColumnDef<SourceUrlRow, unknown>'.
+    Type 'AccessorKeyColumnDefBase<SourceUrlRow, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<SourceUrlRow, unknown> & Partial<IdIdentifier<SourceUrlRow, unknown>>'.
+      Type 'AccessorKeyColumnDefBase<SourceUrlRow, string> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<SourceUrlRow, unknown>'.
+        Types of property 'cell' are incompatible.
+          Type 'ColumnDefTemplate<CellContext<SourceUrlRow, string>> | undefined' is not assignable to type 'ColumnDefTemplate<CellContext<SourceUrlRow, unknown>> | undefined'.
+            Type '(props: CellContext<SourceUrlRow, string>) => any' is not assignable to type 'ColumnDefTemplate<CellContext<SourceUrlRow, unknown>> | undefined'.
+              Type '(props: CellContext<SourceUrlRow, string>) => any' is not assignable to type '(props: CellContext<SourceUrlRow, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'CellContext<SourceUrlRow, unknown>' is not assignable to type 'CellContext<SourceUrlRow, string>'.
+                    The types of 'cell.column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<SourceUrlRow, unknown> | undefined' is not assignable to type 'AccessorFn<SourceUrlRow, string> | undefined'.
+                        Type 'AccessorFn<SourceUrlRow, unknown>' is not assignable to type 'AccessorFn<SourceUrlRow, string>'.
+                          Type 'unknown' is not assignable to type 'string'.
+Error: src/components/sources/source-detail-urls-table.tsx(136,7): error TS2322: Type 'AccessorKeyColumnDef<SourceUrlRow, boolean>' is not assignable to type 'ColumnDef<SourceUrlRow, unknown>'.
+  Type 'AccessorKeyColumnDefBase<SourceUrlRow, boolean> & Partial<StringHeaderIdentifier>' is not assignable to type 'ColumnDef<SourceUrlRow, unknown>'.
+    Type 'AccessorKeyColumnDefBase<SourceUrlRow, boolean> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<SourceUrlRow, unknown> & Partial<IdIdentifier<SourceUrlRow, unknown>>'.
+      Type 'AccessorKeyColumnDefBase<SourceUrlRow, boolean> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<SourceUrlRow, unknown>'.
+        Types of property 'cell' are incompatible.
+          Type 'ColumnDefTemplate<CellContext<SourceUrlRow, boolean>> | undefined' is not assignable to type 'ColumnDefTemplate<CellContext<SourceUrlRow, unknown>> | undefined'.
+            Type '(props: CellContext<SourceUrlRow, boolean>) => any' is not assignable to type 'ColumnDefTemplate<CellContext<SourceUrlRow, unknown>> | undefined'.
+              Type '(props: CellContext<SourceUrlRow, boolean>) => any' is not assignable to type '(props: CellContext<SourceUrlRow, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'CellContext<SourceUrlRow, unknown>' is not assignable to type 'CellContext<SourceUrlRow, boolean>'.
+                    The types of 'cell.column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<SourceUrlRow, unknown> | undefined' is not assignable to type 'AccessorFn<SourceUrlRow, boolean> | undefined'.
+                        Type 'AccessorFn<SourceUrlRow, unknown>' is not assignable to type 'AccessorFn<SourceUrlRow, boolean>'.
+                          Type 'unknown' is not assignable to type 'boolean'.
+Error: src/components/sources/source-detail-urls-table.tsx(152,7): error TS2322: Type 'AccessorKeyColumnDef<SourceUrlRow, { initial: string; color: string; }[]>' is not assignable to type 'ColumnDef<SourceUrlRow, unknown>'.
+  Type 'AccessorKeyColumnDefBase<SourceUrlRow, { initial: string; color: string; }[]> & Partial<StringHeaderIdentifier>' is not assignable to type 'ColumnDef<SourceUrlRow, unknown>'.
+    Type 'AccessorKeyColumnDefBase<SourceUrlRow, { initial: string; color: string; }[]> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<SourceUrlRow, unknown> & Partial<IdIdentifier<SourceUrlRow, unknown>>'.
+      Type 'AccessorKeyColumnDefBase<SourceUrlRow, { initial: string; color: string; }[]> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<SourceUrlRow, unknown>'.
+        Types of property 'cell' are incompatible.
+          Type 'ColumnDefTemplate<CellContext<SourceUrlRow, { initial: string; color: string; }[]>> | undefined' is not assignable to type 'ColumnDefTemplate<CellContext<SourceUrlRow, unknown>> | undefined'.
+            Type '(props: CellContext<SourceUrlRow, { initial: string; color: string; }[]>) => any' is not assignable to type 'ColumnDefTemplate<CellContext<SourceUrlRow, unknown>> | undefined'.
+              Type '(props: CellContext<SourceUrlRow, { initial: string; color: string; }[]>) => any' is not assignable to type '(props: CellContext<SourceUrlRow, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'CellContext<SourceUrlRow, unknown>' is not assignable to type 'CellContext<SourceUrlRow, { initial: string; color: string; }[]>'.
+                    The types of 'cell.column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<SourceUrlRow, unknown> | undefined' is not assignable to type 'AccessorFn<SourceUrlRow, { initial: string; color: string; }[]> | undefined'.
+                        Type 'AccessorFn<SourceUrlRow, unknown>' is not assignable to type 'AccessorFn<SourceUrlRow, { initial: string; color: string; }[]>'.
+                          Type 'unknown' is not assignable to type '{ initial: string; color: string; }[]'.
+Error: src/components/sources/source-detail-urls-table.tsx(185,9): error TS2345: Argument of type 'AccessorKeyColumnDef<SourceUrlRow, number>' is not assignable to parameter of type 'ColumnDef<SourceUrlRow, unknown>'.
+  Type 'AccessorKeyColumnDefBase<SourceUrlRow, number> & Partial<StringHeaderIdentifier>' is not assignable to type 'ColumnDef<SourceUrlRow, unknown>'.
+    Type 'AccessorKeyColumnDefBase<SourceUrlRow, number> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<SourceUrlRow, unknown> & Partial<IdIdentifier<SourceUrlRow, unknown>>'.
+      Type 'AccessorKeyColumnDefBase<SourceUrlRow, number> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<SourceUrlRow, unknown>'.
+        Types of property 'cell' are incompatible.
+          Type 'ColumnDefTemplate<CellContext<SourceUrlRow, number>> | undefined' is not assignable to type 'ColumnDefTemplate<CellContext<SourceUrlRow, unknown>> | undefined'.
+            Type '(props: CellContext<SourceUrlRow, number>) => any' is not assignable to type 'ColumnDefTemplate<CellContext<SourceUrlRow, unknown>> | undefined'.
+              Type '(props: CellContext<SourceUrlRow, number>) => any' is not assignable to type '(props: CellContext<SourceUrlRow, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'CellContext<SourceUrlRow, unknown>' is not assignable to type 'CellContext<SourceUrlRow, number>'.
+                    The types of 'cell.column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<SourceUrlRow, unknown> | undefined' is not assignable to type 'AccessorFn<SourceUrlRow, number> | undefined'.
+                        Type 'AccessorFn<SourceUrlRow, unknown>' is not assignable to type 'AccessorFn<SourceUrlRow, number>'.
+                          Type 'unknown' is not assignable to type 'number'.
+Error: src/components/sources/source-detail-urls-table.tsx(195,7): error TS2345: Argument of type 'AccessorKeyColumnDef<SourceUrlRow, number>' is not assignable to parameter of type 'ColumnDef<SourceUrlRow, unknown>'.
+  Type 'AccessorKeyColumnDefBase<SourceUrlRow, number> & Partial<StringHeaderIdentifier>' is not assignable to type 'ColumnDef<SourceUrlRow, unknown>'.
+    Type 'AccessorKeyColumnDefBase<SourceUrlRow, number> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<SourceUrlRow, unknown> & Partial<IdIdentifier<SourceUrlRow, unknown>>'.
+      Type 'AccessorKeyColumnDefBase<SourceUrlRow, number> & Partial<StringHeaderIdentifier>' is not assignable to type 'AccessorKeyColumnDefBase<SourceUrlRow, unknown>'.
+        Types of property 'cell' are incompatible.
+          Type 'ColumnDefTemplate<CellContext<SourceUrlRow, number>> | undefined' is not assignable to type 'ColumnDefTemplate<CellContext<SourceUrlRow, unknown>> | undefined'.
+            Type '(props: CellContext<SourceUrlRow, number>) => any' is not assignable to type 'ColumnDefTemplate<CellContext<SourceUrlRow, unknown>> | undefined'.
+              Type '(props: CellContext<SourceUrlRow, number>) => any' is not assignable to type '(props: CellContext<SourceUrlRow, unknown>) => any'.
+                Types of parameters 'props' and 'props' are incompatible.
+                  Type 'CellContext<SourceUrlRow, unknown>' is not assignable to type 'CellContext<SourceUrlRow, number>'.
+                    The types of 'cell.column.accessorFn' are incompatible between these types.
+                      Type 'AccessorFn<SourceUrlRow, unknown> | undefined' is not assignable to type 'AccessorFn<SourceUrlRow, number> | undefined'.
+                        Type 'AccessorFn<SourceUrlRow, unknown>' is not assignable to type 'AccessorFn<SourceUrlRow, number>'.
+                          Type 'unknown' is not assignable to type 'number'.
+Error: src/components/top-sources.tsx(628,62): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ openai: IconType; chatgpt: IconType; anthropic: IconType; claude: IconType; google: IconType; gemini: IconType; "google-ai-overview": IconType; perplexity: IconType; }'.
+  No index signature with a parameter of type 'string' was found on type '{ openai: IconType; chatgpt: IconType; anthropic: IconType; claude: IconType; google: IconType; gemini: IconType; "google-ai-overview": IconType; perplexity: IconType; }'.
+Error: src/components/top-sources.tsx(629,63): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ openai: "#10a37f"; chatgpt: "#10a37f"; anthropic: "#d4a27f"; claude: "#d4a27f"; google: "#4285f4"; gemini: "#4285f4"; "google-ai-overview": "#ea4335"; perplexity: "#20808d"; }'.
+  No index signature with a parameter of type 'string' was found on type '{ openai: "#10a37f"; chatgpt: "#10a37f"; anthropic: "#d4a27f"; claude: "#d4a27f"; google: "#4285f4"; gemini: "#4285f4"; "google-ai-overview": "#ea4335"; perplexity: "#20808d"; }'.
+Error: src/components/top-sources.tsx(630,62): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{ openai: string; chatgpt: string; anthropic: string; claude: string; google: string; gemini: string; "google-ai-overview": string; perplexity: string; }'.
+  No index signature with a parameter of type 'string' was found on type '{ openai: string; chatgpt: string; anthropic: string; claude: string; google: string; gemini: string; "google-ai-overview": string; perplexity: string; }'.
+/home/runner/work/somethinginc-app/somethinginc-app/apps/ui:
+ ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  ui@0.0.0 build: `tsc -b && vite build`
+Exit status 2

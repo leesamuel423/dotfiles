@@ -3,36 +3,52 @@
   "includeCoAuthoredBy": false,
   "permissions": {
     "allow": [
+      "Read",
+      "Grep",
+      "Glob",
+      "WebSearch",
+      "WebFetch",
+      "Edit",
+      "Write",
       "Bash",
-      "Bash(alias nvim)",
-      "Bash(rg:*)",
-      "Bash(/opt/homebrew/Cellar/ripgrep/14.1.1/bin/rg -n \"chdir|cd |nvim_set_current_dir|VimEnter.*cd\" /Users/samuellee/dotfiles/.config/nvim)",
-      "Bash(find:*)",
-      "Bash(brew list:*)",
-      "Bash(mkdir:*)",
-      "Bash(uv:*)",
-      "Bash(mv:*)",
-      "Bash(grep:*)",
-      "Bash(npm:*)",
-      "Bash(ls:*)",
-      "Bash(cd:*)",
-      "Bash(cp:*)",
-      "Bash(rm:*)",
-      "Bash(cat:*)",
-      "Bash(echo:*)",
-      "Bash(pwd)",
-      "Bash(git:*)",
-      "Bash(chmod:*)",
-      "Bash(touch:*)",
-      "Bash(which:*)",
-      "Bash(whereis:*)",
-      "Bash(env)",
-      "Bash(pip:*)",
-      "Bash(python:*)",
-      "Bash(node:*)",
-      "Bash(yarn:*)"
+      "mcp__filesystem__*",
+      "Skill"
     ],
     "deny": []
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "file=\"$CLAUDE_FILE_PATH\"; if [ -z \"$file\" ]; then exit 0; fi; case \"$(basename \"$file\")\" in .env|.env.*|credentials.json|*.pem|*.key|id_rsa*) echo \"BLOCKED: Cannot modify sensitive file: $file\" >&2; exit 2 ;; esac; exit 0"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "file=\"$CLAUDE_FILE_PATH\"; if [ -z \"$file\" ]; then exit 0; fi; case \"$file\" in *.py) black --quiet \"$file\" 2>/dev/null ;; *.js|*.ts|*.tsx|*.jsx|*.css|*.html|*.json|*.md|*.yaml|*.yml) prettier --write \"$file\" 2>/dev/null ;; esac; exit 0"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "msg=$(cat | jq -r '.message // \"Claude Code needs your attention\"'); osascript -e \"display notification \\\"$msg\\\" with title \\\"Claude Code\\\"\""
+          }
+        ]
+      }
+    ]
   },
   "statusLine": {
     "type": "command",
@@ -46,14 +62,21 @@
     "hookify@claude-plugins-official": true,
     "rust-analyzer-lsp@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": true,
-    "greptile@claude-plugins-official": true,
     "security-guidance@claude-plugins-official": true,
     "code-review@claude-plugins-official": true,
-    "linear@claude-plugins-official": true,
-    "pyright-lsp@claude-plugins-official": true
+    "pyright-lsp@claude-plugins-official": true,
+    "lua-lsp@claude-plugins-official": true,
+    "clangd-lsp@claude-plugins-official": true,
+    "coderabbit@claude-plugins-official": true
   },
   "outputStyle": "Explanatory",
   "spinnerTipsEnabled": true,
   "alwaysThinkingEnabled": true,
-  "model": "opus"
+  "effortLevel": "high",
+  "voiceEnabled": true,
+  "fastMode": true,
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "ENABLE_TOOL_SEARCH": "1"
+  }
 }

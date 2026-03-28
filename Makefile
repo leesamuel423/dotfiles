@@ -26,6 +26,9 @@ help:
 	@echo "  sync-front        - Sync front repository"
 	@echo "  sync-roast        - Sync roast repository"
 	@echo "  class             - Attach to CIT595 docker container"
+	@echo "  agent-links       - Create AGENTS.md and symlink CLAUDE.md/GEMINI.md to it"
+	@echo "  cppbuild          - Compile all .cpp files in current directory (C++17)"
+	@echo "  cppclean          - Remove compiled binary"
 	@echo ""
 	@echo "Usage from any directory: make -f ~/Makefile <target>"
 
@@ -106,6 +109,35 @@ sync-roast:
 # Alias for common typo
 .PHONY: sync-daemon
 sync-daemon: sync-damon
+
+# Create AGENTS.md and symlink CLAUDE.md/GEMINI.md to it
+.PHONY: agent-links
+agent-links:
+	@if [ ! -f AGENTS.md ]; then \
+		touch AGENTS.md; \
+		echo "Created AGENTS.md"; \
+	fi
+	@[ -L CLAUDE.md ] || [ -f CLAUDE.md ] || (ln -s AGENTS.md CLAUDE.md && echo "Created CLAUDE.md -> AGENTS.md")
+	@[ -L GEMINI.md ] || [ -f GEMINI.md ] || (ln -s AGENTS.md GEMINI.md && echo "Created GEMINI.md -> AGENTS.md")
+
+# -- C++ Commands --
+# Compile C++ files in current directory with warnings
+CXX := g++
+CXXFLAGS := -Wall -Wextra -Wpedantic -Wconversion -std=c++17
+SRCS := $(wildcard *.cpp)
+OBJS := $(SRCS:.cpp=.o)
+TARGET := main
+
+.PHONY: cppbuild
+cppbuild: $(OBJS)
+	$(CXX) $(CXXFLAGS) $(OBJS) -o $(TARGET)
+
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+.PHONY: cppclean
+cppclean:
+	rm -f $(TARGET) $(OBJS)
 
 # Alias for CIT Docker Container
 .PHONY: class

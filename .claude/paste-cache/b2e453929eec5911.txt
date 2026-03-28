@@ -1,0 +1,25 @@
+
+  ┌─────┬──────────┬─────────────────────────────────┬────────────────┬────────────────────────────────────────┐
+  │  #  │   Call   │              Model              │    Trigger     │                  File                  │
+  ├─────┼──────────┼─────────────────────────────────┼────────────────┼────────────────────────────────────────┤
+  │     │ Platform │                                 │ Per query on   │                                        │
+  │ 1   │  executi │ openai/gpt-4o:online            │ ChatGPT        │ engines/openai.ts                      │
+  │     │ on       │                                 │                │                                        │
+  ├─────┼──────────┼─────────────────────────────────┼────────────────┼────────────────────────────────────────┤
+  │     │ Platform │                                 │ Per query on   │                                        │
+  │ 2   │  executi │ perplexity/sonar:online         │ Perplexity     │ engines/perplexity.ts                  │
+  │     │ on       │                                 │                │                                        │
+  ├─────┼──────────┼─────────────────────────────────┼────────────────┼────────────────────────────────────────┤
+  │     │ Platform │ anthropic/claude-sonnet-4:onlin │ Per query on   │                                        │
+  │ 3   │  executi │ e                               │ Claude         │ engines/claude.ts                      │
+  │     │ on       │                                 │                │                                        │
+  ├─────┼──────────┼─────────────────────────────────┼────────────────┼────────────────────────────────────────┤
+  │     │ Platform │                                 │ Per query on   │                                        │
+  │ 4   │  executi │ google/gemini-2.5-flash:online  │ Gemini         │ engines/gemini.ts                      │
+  │     │ on       │                                 │                │                                        │
+  ├─────┼──────────┼─────────────────────────────────┼────────────────┼────────────────────────────────────────┤
+  │     │ Sentimen │                                 │ Fire-and-forge │                                        │
+  │ 5   │ t        │ openai/gpt-4o-mini              │ t after EACH   │ services/query-execution-processor.ts: │
+  │     │ analysis │                                 │ execution      │ 79                                     │
+  │     │          │                                 │ above          │                                        │
+  └─────┴──────────┴─────────────────────────────────┴────────────────┴─────────

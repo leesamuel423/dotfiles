@@ -1,0 +1,100 @@
+You are auditing the fanout query system in a GEO (Generative Engine Optimization) analytics platform
+  called Promptive. The system generates sub-queries ("fanout queries") from seed queries by asking     LLMs to decompose them, then stores and analyzes the results.
+
+                                          A recent change constrained the cluster field on fanout queries to use 6 predefined UNIVERSAL_TOPICS
+ instead of free-form LLM output. Your job is to trace the full pipeline end-to-end and identify edge   cases, bugs, data integrity issues, and correctness problems.
+ System Architecture
+ Generation flow:                                                                                       1. buildFanoutSystemPrompt(seedQuery) in apps/api/src/engines/types.ts constructs a system prompt      asking the LLM to output a <!--FANOUT:{...}--> marker with 10 sub-queries
+ 2. Each engine (claude.ts, openai.ts, gemini.ts, perplexity.ts in apps/api/src/engines/) prepends      this as a system message alongside the sentiment prompt                                                3. extractFanout(content) in types.ts parses the marker via regex /<!--FANOUT:\s*(\{.*?\})\s*-->/s,
+ validates/normalizes fields, and returns structured data                                               4. query-execution-processor.ts in apps/api/src/services/ checks if the query is non-fanout and has 0
+  existing fanouts, then saves results to the fanout_queries table via Prisma
+ Storage: FanoutQuery Prisma model in apps/api/prisma/schema.prisma with fields: id, queryId,           websiteId, fanoutText, embedding, similarity, intent, tier, cluster, timestamps
+
+                        Analytics: apps/api/src/services/fanout-analytics.ts provides metrics, cluster grouping, coverage
+ gaps, common terms, execution history — all keyed on the cluster field for grouping
+ API routes: apps/api/src/routes/fanout.ts exposes ~10 endpoints under                                  /websites/:websiteId/fanout-queries/...
+
+                                                                UI: apps/ui/src/app/routes/prompts.fanout-queries.tsx and apps/ui/src/components/prompts/fanout-*.tsx
+  render the data, including cluster badges in the queries table
+ Allowed topics (the 6 UNIVERSAL_TOPICS): "Features & Capabilities", "Pricing & Plans", "Alternatives   & Comparisons", "How-To & Setup", "Support & Troubleshooting", "Reviews & Opinions"
+                    What to Audit
+
+ Read the files listed below and investigate these areas:
+ 1. Extraction & Validation (types.ts)
+
+                                                                  - Does extractFanout handle all realistic LLM output formats? Consider: extra whitespace in the
+ marker, nested JSON, malformed JSON with trailing commas, the marker appearing multiple times, the     marker split across lines                                                                              - The regex uses the /s (dotall) flag but also .*? (non-greedy) — could a response with multiple -->   cause the regex to capture too little or too much?
+ - The fallback for unrecognized clusters defaults to UNIVERSAL_TOPICS[0] ("Features & Capabilities").   Is this a reasonable default or will it skew analytics data by over-representing this category?
+ - similarity, tier, and intent have validation; verify each is correct and handles edge values (NaN,
+ undefined, strings instead of numbers, negative values)
+
+                                                2. Storage & Deduplication (query-execution-processor.ts)
+                                              - Fanout queries are only generated when fanoutCount === 0. Is there a race condition if two workers
+ pick up the same query simultaneously? Both could see count === 0 and both generate fanouts, leading
+ to duplicates
+ - When fanout records are saved via createMany, are duplicate fanoutText values within the same batch
+  handled?
+ - New Query records are created for fanout texts as isActive: false. What happens if a fanout text
+ matches an existing active query? Is there proper deduplication?
+ - The category of new Query records is copied from the parent query's category — but this might
+ differ from the fanout's cluster. Is that intentional or a bug?
+ 3. Analytics Correctness (fanout-analytics.ts)
+
+ - getFanoutClusters groups by the cluster field. With the old free-form values, existing data in the
+ DB will have clusters like "Comparison Queries" that don't match any UNIVERSAL_TOPIC. How does this
+ affect grouping and display?
+ - getCoverageGaps computes per-cluster coverage differences. Verify the SQL/logic handles null
+ clusters, empty result sets, and division by zero
+ - Check if any analytics function assumes a fixed set of clusters or if they're all dynamic (which
+ would handle the migration gracefully)
+
+ 4. API Route Layer (routes/fanout.ts)
+
+ - The topics query parameter filters by category. Does it filter on FanoutQuery.cluster or
+ Query.category? If the latter, the cluster constraint change won't affect filtering
+ - Platform normalization maps "chatgpt" → "openai" and "google-ai" → "google_aio". Verify this is
+ applied consistently across all endpoints
+ - The /convert endpoint promotes a fanout query to a tracked query. Check that it correctly handles    the cluster→category mapping
+
+ 5. UI Rendering
+
+ - The fanout queries table renders cluster as a text badge. With the new constrained values, verify
+ there's no hardcoded color mapping or icon logic that depends on the old free-form names
+ - Check if any frontend filtering or grouping logic assumes specific cluster values
+
+ 6. Data Migration / Backward Compatibility
+
+ - Existing fanout_queries rows in the database still have old free-form cluster values ("Comparison
+ Queries", "Pricing & Cost", etc.). These will NOT be migrated. Identify any place where this mismatch
+  could cause bugs or confusing UI behavior
+ - Should there be a migration script to normalize existing clusters?
+
+ Files to Read
+
+ Start with these (in order of priority):
+ 1. apps/api/src/engines/types.ts — extraction, validation, prompt construction
+ 2. apps/api/src/services/query-execution-processor.ts — storage logic, race conditions
+ 3. apps/api/src/services/fanout-analytics.ts — all analytics functions
+ 4. apps/api/src/routes/fanout.ts — API endpoints, parameter handling
+ 5. apps/api/src/config/constants.ts — UNIVERSAL_TOPICS definition
+ 6. apps/api/prisma/schema.prisma — FanoutQuery model, indexes, constraints
+ 7. apps/ui/src/components/prompts/fanout-queries-table.tsx — cluster rendering
+ 8. apps/ui/src/app/routes/prompts.fanout-queries.tsx — page-level data fetching
+ 9. apps/ui/src/lib/api.ts — FanoutQueryMetric type definition (search for "fanout")
+
+ Also check:
+ - apps/api/src/engines/claude.ts, openai.ts, gemini.ts, perplexity.ts — how fanoutContext is wired
+ into each engine
+ - apps/api/tests/integration/fanout-analytics-perf.test.ts — existing test coverage
+
+ Output Format
+
+ For each issue found, report:
+ - Severity: Critical / High / Medium / Low
+ - Location: file path and line number(s)
+ - Issue: what's wrong
+ - Impact: what breaks or degrades
+ - Fix: concrete suggestion
+
+ Group findings by audit area (Extraction, Storage, Analytics, API, UI, Migration). End with a summary
+  of the most important findings ranked by severity.

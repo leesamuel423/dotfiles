@@ -1,0 +1,11 @@
+Repo: quartz-frontend
+File(s): src/features/policy-library/hooks/usePolicyDocuments.ts
+Category: Performance
+Issue:
+The usePolicyDocuments hook (lines 61-89) has a 2N+1 query pattern. After the initial fetch — which already joins policy_document_versions via the foreign key on line 33 but doesn't filter for is_current — it loops over every document and fires two individual Supabase queries per document: one to re-fetch the current version (lines 64-69) and one to count submissions (lines 71-78). For an org with 30 policy documents, this triggers 61 database queries on every page load instead of 3.
+Impact:
+This hook powers the Policy Library list view, which loads on page visit. Every user in the org pays the full 2N+1 cost each time. As orgs accumulate more policy documents, load time scales linearly — 30 docs = 61 queries, 100 docs = 201 queries. This creates noticeable latency and unnecessary Supabase connection pressure on a read-heavy page.
+Proposed Fix:
+Two changes to collapse 2N+1 queries down to 3 total: (1) Add an is_current filter to the existing foreign-key join on line 33 (.eq("policy_document_versions.is_current", true)) so the initial query returns only current versions inline — eliminating the per-document version fetch entirely. (2) After the initial query, collect all current version IDs and batch-fetch submission counts in a single .in("document_version_id", versionIds) query with .select("document_version_id", {count: "exact"}), then merge counts in-memory. The entire Promise.all loop on lines 62-89 gets replaced with ~10 lines of flat, non-looping code.
+Scope: Small
+Reply :white_check_mark: to approve implementation, or :speech_balloon: with feedback.

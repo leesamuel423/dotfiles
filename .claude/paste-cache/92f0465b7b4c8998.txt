@@ -1,0 +1,8 @@
+Repo: quartz-supabase
+File(s): supabase/functions/_shared/workflows/v2_backend_temp/postgRESTWorkflowRunDB.ts
+Category: Bug
+Issue:
+The persistSnapshot() method (lines 141-180) and the similar truncateSnapshotsTo() method (lines 182-210) perform a non-atomic read-then-write on the JSONB snapshots array. They first read the current snapshots, then spread them into a new array with the appended/truncated value, then write the whole array back. Between the read and the write, a concurrent request (e.g., two users advancing the same workflow, or a rapid auto-advance hitting the edge function twice) can persist its own snapshot — which the second write will silently overwrite with stale data.
+Impact:
+Lost workflow snapshots mean lost progress. If User A and User B both advance a shared workflow concurrently, one user's step can "disappear" — the workflow appears to revert to a previous state. This is a data-loss race condition that becomes more likely as workflow concurrency increases and is extremely difficult to reproduce or diagnose after the fact.Proposed Fix:
+Create a Postgres function (e.g., append_workflow_snapshot(run_id uuid, org_id uuid, new_snapshot jsonb)) that performs an atomic JSONB array append using jsonb_array_append or || jsonb_build_array(new_snapshot) in a single UPDATE statement — no separate read needed. Call it via this.supabase.rpc('append_workflow_snapshot', ...). Apply the same pattern to truncateSnapshotsTo with a corresponding truncate_workflow_snapshots(run_id, org_id, execution_id) RPC. This eliminates the race window entirely by making the operation atomic at the database level.

@@ -36,10 +36,9 @@ alias treeclean='tree -I "node_modules|__pycache__|.git|dist|build|*.pyc" "$@" |
 alias cat="bat"
 alias makef="make -f ~/Makefile"
 alias zshrc="v ~/.zshrc"
-
-
-# Application aliases
-alias ow-serve="cd ~/open-webui && source open-webui-env/bin/activate && open-webui serve"
+alias szshrc="source ~/.zshrc"
+alias c="claude"
+alias fk="fuck"
 
 # ---------> OTHER CONFIGS <---------
 # fzf config
@@ -96,9 +95,6 @@ alias bjdtls='bazel-jdtls'
 export PATH="/Users/samuellee/.local/bin:$PATH"
 export PATH="$HOME/.deno/bin:$PATH"
 
-
-
-
 # bun completions
 [ -s "/Users/samuellee/.bun/_bun" ] && source "/Users/samuellee/.bun/_bun"
 
@@ -108,3 +104,16 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # Added by Antigravity
 export PATH="/Users/samuellee/.antigravity/antigravity/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/samuellee/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+export FIGMA_OAUTH_TOKEN=''
+
+# Vite+ bin (https://viteplus.dev)
+. "$HOME/.vite-plus/env"

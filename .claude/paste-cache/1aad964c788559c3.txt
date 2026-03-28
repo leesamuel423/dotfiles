@@ -1,0 +1,13 @@
+Hey can you ELI5 the security change, sorry that i'm not following
+[2:23 PM]Wanna make sure i understand how it impacts our soc2 timeline
+[2:23 PM]that's gonna be coming up soon
+Samuel Lee  [3:15 PM]
+The GRANT USAGE ON SCHEMA private TO service_role opens up all private schema functions to service_role (any function that doesn't have an explicit REVOKE FROM PUBLIC becomes callable). That undermines the security we currently get from the private schema.
+
+The root issue is the public wrappers for the email notification functions — they call into private.* but aren't SECURITY DEFINER, so the calling role (service_role) needs schema access to resolve the reference.
+
+So the conclusion Spencer and I came to was that we should make the two public wrappers (claim_pending_email_notifications, recover_stuck_email_notifications) SECURITY DEFINER SET search_path = public. They already have REVOKE FROM PUBLIC + GRANT TO service_role, so the access is locked down. Then we can drop the USAGE grant so the private schema stays sealed.
+
+The reason Spencer and I were having the conversation was because we keep bumping into this "Edge Function needs a privileged DB operation" issue, once on my end, and I'm guessing sometime on his end as well
+Christine Barron  [4:04 PM]
+What aspects of the email notifications call into private? getting the user's email for example?

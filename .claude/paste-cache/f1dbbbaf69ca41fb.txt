@@ -1,0 +1,7 @@
+File(s): supabase/functions/list-available-workflows/index.ts
+Category: Performance
+Issue:
+The list-available-workflows endpoint has an N+1 query pattern. After fetching accessible workflow definitions, it iterates over each one and fires a separate workflow_runs query to check if the user has an active run (lines 185-223). With N workflows, this results in N+1 total database queries — the initial workflow fetch plus one per workflow.
+Impact:
+For organizations with many published workflows, this creates significant latency and database load. An org with 50 workflows triggers 51 queries per request. This endpoint is called on page load, so every user sees this cost each time they visit the workflows page.Proposed Fix:
+Replace the Promise.all(accessibleWorkflows.map(...)) loop with a single batched query. Fetch all active runs for the user in one query using .in("workflow_definition_id", accessibleWorkflows.map(w => w.id)), then group the results by workflow_definition_id in-memory and merge with the workflow list. This collapses N+1 queries into 2, reducing latency by an order of magnitude.

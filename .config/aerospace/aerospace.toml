@@ -75,6 +75,9 @@ outer.right = 0
 7 = 1
 8 = 1
 9 = 1
+A = 2  # Built-in / middle
+S = 2
+D = 2
 Q = 3  # Right external
 W = 3
 E = 3
@@ -141,9 +144,36 @@ alt-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
 alt-0 = 'workspace 0'
-alt-1 = 'workspace 1'
-alt-2 = 'workspace 2'
-alt-3 = 'workspace 3'
+alt-1 = '''exec-and-forget
+current=$(aerospace list-workspaces --focused)
+aerospace workspace 1
+aerospace workspace Q
+aerospace workspace A
+case "$current" in
+  [0-9]) aerospace workspace 1 ;;
+  [QWERTYUIOP]) aerospace workspace Q ;;
+  *) aerospace workspace A ;;
+esac'''
+alt-2 = '''exec-and-forget
+current=$(aerospace list-workspaces --focused)
+aerospace workspace 2
+aerospace workspace W
+aerospace workspace S
+case "$current" in
+  [0-9]) aerospace workspace 2 ;;
+  [QWERTYUIOP]) aerospace workspace W ;;
+  *) aerospace workspace S ;;
+esac'''
+alt-3 = '''exec-and-forget
+current=$(aerospace list-workspaces --focused)
+aerospace workspace 3
+aerospace workspace E
+aerospace workspace D
+case "$current" in
+  [0-9]) aerospace workspace 3 ;;
+  [QWERTYUIOP]) aerospace workspace E ;;
+  *) aerospace workspace D ;;
+esac'''
 alt-4 = 'workspace 4'
 alt-5 = 'workspace 5'
 alt-6 = 'workspace 6'
