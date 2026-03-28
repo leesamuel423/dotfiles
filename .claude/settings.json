@@ -1,6 +1,9 @@
 {
   "cleanupPeriodDays": 10,
-  "includeCoAuthoredBy": false,
+  "attribution": {
+    "commit": "",
+    "pr": ""
+  },
   "permissions": {
     "allow": [
       "Read",
@@ -11,6 +14,7 @@
       "Edit",
       "Write",
       "Bash",
+      "Agent",
       "mcp__filesystem__*",
       "Skill"
     ],
@@ -26,6 +30,24 @@
             "command": "file=\"$CLAUDE_FILE_PATH\"; if [ -z \"$file\" ]; then exit 0; fi; case \"$(basename \"$file\")\" in .env|.env.*|credentials.json|*.pem|*.key|id_rsa*) echo \"BLOCKED: Cannot modify sensitive file: $file\" >&2; exit 2 ;; esac; exit 0"
           }
         ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cmd=$(cat | jq -r '.tool_input.command'); case \"$cmd\" in *'rm -rf /'*|*'rm -rf ~'*|*'rm -rf .'*|*'rm -rf $HOME'*) echo \"BLOCKED: Refusing broad recursive delete: $cmd\" >&2; exit 2 ;; esac; exit 0"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cmd=$(cat | jq -r '.tool_input.command'); case \"$cmd\" in *'git commit'*) staged=$(git diff --cached --name-only 2>/dev/null); for f in $staged; do case \"$f\" in *.py) ruff check \"$f\" 2>&1 || exit 2 ;; *.sh) shellcheck \"$f\" 2>&1 || exit 2 ;; esac; done ;; esac; exit 0"
+          }
+        ]
       }
     ],
     "PostToolUse": [
@@ -34,7 +56,16 @@
         "hooks": [
           {
             "type": "command",
-            "command": "file=\"$CLAUDE_FILE_PATH\"; if [ -z \"$file\" ]; then exit 0; fi; case \"$file\" in *.py) black --quiet \"$file\" 2>/dev/null ;; *.js|*.ts|*.tsx|*.jsx|*.css|*.html|*.json|*.md|*.yaml|*.yml) prettier --write \"$file\" 2>/dev/null ;; esac; exit 0"
+            "command": "bash ~/.claude/hooks/post-edit.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "duration=$(cat | jq -r '.tool_result.duration_ms // 0'); if [ \"$duration\" -gt 10000 ]; then secs=$((duration / 1000)); osascript -e \"display notification \\\"Command finished (${secs}s)\\\" with title \\\"Claude Code\\\"\"; fi; exit 0"
           }
         ]
       }
@@ -45,6 +76,27 @@
           {
             "type": "command",
             "command": "msg=$(cat | jq -r '.message // \"Claude Code needs your attention\"'); osascript -e \"display notification \\\"$msg\\\" with title \\\"Claude Code\\\"\""
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"Branch: $(git branch --show-current 2>/dev/null)\"; echo \"Recent commits:\"; git log --oneline -5 2>/dev/null; dirty=$(git status --short 2>/dev/null); if [ -n \"$dirty\" ]; then echo \"Dirty files:\"; echo \"$dirty\"; fi"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat | jq '{timestamp: now | todate, summary: .summary, files: .file_paths, decisions: .key_decisions}' >> ~/.claude/compaction-log.jsonl 2>/dev/null; exit 0",
+            "async": true
           }
         ]
       }
@@ -60,13 +112,10 @@
     "feature-dev@claude-plugins-official": true,
     "pr-review-toolkit@claude-plugins-official": true,
     "hookify@claude-plugins-official": true,
-    "rust-analyzer-lsp@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": true,
     "security-guidance@claude-plugins-official": true,
     "code-review@claude-plugins-official": true,
     "pyright-lsp@claude-plugins-official": true,
-    "lua-lsp@claude-plugins-official": true,
-    "clangd-lsp@claude-plugins-official": true,
     "coderabbit@claude-plugins-official": true
   },
   "outputStyle": "Explanatory",
