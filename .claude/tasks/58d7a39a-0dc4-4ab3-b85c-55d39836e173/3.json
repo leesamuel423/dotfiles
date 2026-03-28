@@ -1,9 +1,0 @@
-{
-  "id": "3",
-  "subject": "Update router configuration",
-  "description": "Register the new routes in main.tsx router configuration",
-  "activeForm": "Updating router configuration",
-  "status": "pending",
-  "blocks": [],
-  "blockedBy": []
-}

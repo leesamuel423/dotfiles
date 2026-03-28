@@ -7,9 +7,12 @@ scripts/tutoring/students
 .claude/todos/*
 
 # Claude Code ephemeral/cache files
+.claude/backups/
+.claude/cache/
 .claude/debug/
 .claude/file-history/
 .claude/history.jsonl
+.claude/paste-cache/
 .claude/plans/
 .claude/plugins/cache/
 .claude/plugins/install-counts-cache.json
@@ -17,5 +20,8 @@ scripts/tutoring/students
 .claude/plugins/known_marketplaces.json
 .claude/plugins/marketplaces/
 .claude/security_warnings_state_*.json
+.claude/sessions/
 .claude/stats-cache.json
+.claude/tasks/
+.claude/telemetry/
 

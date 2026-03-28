@@ -1,9 +1,0 @@
-{
-  "id": "1",
-  "subject": "Apply Prisma schema to database",
-  "description": "Run Prisma migrations to create the database tables (users, organizations, etc.) in the Supabase database",
-  "activeForm": "Applying database schema",
-  "status": "completed",
-  "blocks": [],
-  "blockedBy": []
-}

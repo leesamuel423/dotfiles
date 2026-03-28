@@ -1,9 +1,0 @@
-{
-  "id": "2",
-  "subject": "Create missing frontend route files",
-  "description": "Create route files for analytics, prompts, competitors, seo-agent, and billing pages",
-  "activeForm": "Creating missing routes",
-  "status": "in_progress",
-  "blocks": [],
-  "blockedBy": []
-}
