@@ -21,6 +21,7 @@ help:
 	@echo "  tmpdir            - Create and navigate to temporary directory"
 	@echo "  update-notes      - Update notes"
 	@echo "  claude-update     - Fix and reinstall Claude Code"
+	@echo "  buddy             - Reroll Claude buddy (penguin/legendary/shiny/propeller)"
 	@echo "  sync-back         - Sync back repository"
 	@echo "  sync-damon        - Sync damon repository"
 	@echo "  sync-front        - Sync front repository"
@@ -88,6 +89,10 @@ tmpdir:
 .PHONY: claude-update
 claude-update:
 	@$(HOME_DIR)/dotfiles/scripts/fix-claude-code.sh
+
+.PHONY: buddy
+buddy:
+	@bun run $(HOME_DIR)/buddy-reroll/index.js --species penguin --rarity legendary --shiny --hat propeller
 
 # Sync scripts from home directory
 .PHONY: sync-back

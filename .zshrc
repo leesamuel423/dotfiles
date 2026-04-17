@@ -117,3 +117,6 @@ export FIGMA_OAUTH_TOKEN=''
 
 # Vite+ bin (https://viteplus.dev)
 . "$HOME/.vite-plus/env"
+
+# opencode
+export PATH=/Users/samuellee/.opencode/bin:$PATH
