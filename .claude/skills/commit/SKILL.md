@@ -1,8 +1,9 @@
 ---
-allowed-tools: Bash(git:*), Read
+name: commit
 description: Analyze uncommitted changes and create a well-formatted conventional commit
 disable-model-invocation: true
-argument-hint: "[message hint or options]"
+allowed-tools: Bash(git:*), Bash(gh:*), Read
+argument-hint: "[message hint or description of changes]"
 ---
 
 # Intelligent Git Commit
@@ -54,15 +55,13 @@ Where:
 - **body**: optional, explain what and why vs how, wrap at 72 chars
 - **footer**: optional, breaking changes or issue references
 
-### 3. Present the message and wait for approval
-Show the proposed commit message to the user. **Do not proceed until the user confirms.** If the user requests changes, revise and present again.
-
-### 4. Stage appropriate files
+### 3. Stage appropriate files
 - Use `git add <specific-files>` — stage only the files relevant to this commit
 - **Never use `git add -A` or `git add .`** — these can accidentally stage sensitive files (.env, credentials, keys), large binaries, or unrelated work-in-progress
 - Before staging, check that no sensitive files (.env, credentials, private keys, tokens) are in the changeset. Warn the user if any are found.
 
-### 5. Create the commit
+### 4. Create the commit
+**Do not ask for confirmation.** Commit immediately with the generated message.
 Use a HEREDOC to safely handle special characters:
 ```bash
 git commit -m "$(cat <<'EOF'
@@ -74,6 +73,12 @@ footer
 EOF
 )"
 ```
+
+### 5. Push
+Push the commit to the remote immediately after committing. Do not ask for confirmation.
+- If the branch has an upstream: `git push`
+- If no upstream is set: `git push -u origin $(git branch --show-current)`
+- **Never force-push.** If the push fails, report the error and stop.
 
 ## Examples
 
@@ -87,4 +92,3 @@ EOF
 - Group related changes into logical commits
 - If changes span multiple concerns, suggest splitting into multiple commits
 - Match the style of recent commits shown above when possible
-

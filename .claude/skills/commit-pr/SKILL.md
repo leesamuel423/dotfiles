@@ -1,6 +1,8 @@
 ---
-allowed-tools: Bash(git:*), Bash(gh:*), Read
+name: commit-pr
 description: Commit changes in logical chunks, push, and create or update a PR
+disable-model-invocation: true
+allowed-tools: Bash(git:*), Bash(gh:*), Read
 argument-hint: "[optional: description of changes]"
 ---
 
@@ -55,8 +57,7 @@ Check the current branch name:
 
 1. Analyze the changes and `$ARGUMENTS` to determine the type and scope.
 2. Generate a branch name following the pattern `type/short-description` (e.g., `feat/add-commit-pr-command`, `fix/auth-token-refresh`).
-3. **Present the proposed branch name to the user and wait for confirmation.** If the user suggests a different name, use theirs.
-4. Create and switch to the branch:
+3. Create and switch to the branch:
    ```bash
    git checkout -b <branch-name>
    ```
@@ -75,18 +76,11 @@ Group the changes into logical commits. Use directory, module, or concern as gro
 
 For **each** chunk:
 
-1. Present the files and a proposed conventional commit message:
-   ```
-   type(scope): subject
-
-   body (if needed)
-   ```
-2. **Wait for user confirmation** before proceeding. Accept revisions.
-3. Stage only the specific files for this chunk — **never use `git add -A` or `git add .`**:
+1. Stage only the specific files for this chunk — **never use `git add -A` or `git add .`**:
    ```bash
    git add file1 file2 ...
    ```
-4. Commit using a HEREDOC:
+2. Commit using a conventional commit message with a HEREDOC:
    ```bash
    git commit -m "$(cat <<'EOF'
    type(scope): subject
@@ -126,16 +120,13 @@ gh pr create --base <target-branch> --title "<title>" --body "$(cat <<'EOF'
 
 ## Effect
 [What's different after this lands]
-
-## Tradeoffs
-[Alternatives considered, compromises, or "None"]
 EOF
 )"
 ```
 
 - Keep the title under 70 characters.
 - Fill in each section based on the actual changes and `$ARGUMENTS`.
-- Present the PR title and description to the user for confirmation before creating.
+- Only include a `## Tradeoffs` section if there are meaningful alternatives considered or compromises made. Omit it otherwise.
 
 #### Existing PR → Update
 

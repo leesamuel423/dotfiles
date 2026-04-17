@@ -9,9 +9,12 @@ scripts/tutoring/students
 # Claude Code ephemeral/cache files
 .claude/backups/
 .claude/cache/
+.claude/chrome/
+.claude/compaction-log.jsonl
 .claude/debug/
 .claude/file-history/
 .claude/history.jsonl
+.claude/ide/
 .claude/paste-cache/
 .claude/plans/
 .claude/plugins/cache/
@@ -20,8 +23,11 @@ scripts/tutoring/students
 .claude/plugins/known_marketplaces.json
 .claude/plugins/marketplaces/
 .claude/security_warnings_state_*.json
+.claude/session-env/
 .claude/sessions/
+.claude/settings.local.json
+.claude/skills/.claude/
 .claude/stats-cache.json
 .claude/tasks/
 .claude/telemetry/
-
+personal-secrets/
