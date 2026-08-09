@@ -3,8 +3,7 @@
   "env": {
     "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
     "ENABLE_TOOL_SEARCH": "1",
-    "CLAUDE_CODE_NO_FLICKER": "1",
-    "CLAUDE_CODE_EFFORT_LEVEL": "max"
+    "CLAUDE_CODE_NO_FLICKER": "1"
   },
   "attribution": {
     "commit": "",
@@ -24,8 +23,10 @@
       "mcp__filesystem__*",
       "Skill"
     ],
-    "deny": []
+    "deny": [],
+    "defaultMode": "auto"
   },
+  "model": "opus[1m]",
   "hooks": {
     "PreToolUse": [
       {
@@ -51,7 +52,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cmd=$(cat | jq -r '.tool_input.command'); case \"$cmd\" in *'git commit'*) root=$(git rev-parse --show-toplevel 2>/dev/null); staged=$(git diff --cached --name-only 2>/dev/null); for f in $staged; do case \"$f\" in *.py) ruff check \"$root/$f\" 2>&1 || exit 2 ;; *.sh) shellcheck \"$root/$f\" 2>&1 || exit 2 ;; esac; done ;; esac; exit 0"
+            "command": "cmd=$(cat | jq -r '.tool_input.command'); case \"$cmd\" in *'git commit'*) root=$(git rev-parse --show-toplevel 2>/dev/null); staged=$(git diff --cached --name-only 2>/dev/null); for f in $staged; do [ -f \"$root/$f\" ] || continue; case \"$f\" in *.py) ruff check \"$root/$f\" 2>&1 || exit 2 ;; *.sh) shellcheck \"$root/$f\" 2>&1 || exit 2 ;; esac; done ;; esac; exit 0"
           }
         ]
       }
@@ -74,6 +75,15 @@
             "command": "duration=$(cat | jq -r '.tool_result.duration_ms // 0'); if [ \"$duration\" -gt 10000 ]; then secs=$((duration / 1000)); osascript -e \"display notification \\\"Command finished (${secs}s)\\\" with title \\\"Claude Code\\\"\"; fi; exit 0"
           }
         ]
+      },
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -n \"$SUPERSET_HOME_DIR\" ] && [ -x \"$SUPERSET_HOME_DIR/hooks/notify.sh\" ] && SUPERSET_AGENT_ID=claude \"$SUPERSET_HOME_DIR/hooks/notify.sh\" || true"
+          }
+        ]
       }
     ],
     "Notification": [
@@ -94,6 +104,24 @@
             "command": "echo \"Branch: $(git branch --show-current 2>/dev/null)\"; echo \"Recent commits:\"; git log --oneline -5 2>/dev/null; dirty=$(git status --short 2>/dev/null); if [ -n \"$dirty\" ]; then echo \"Dirty files:\"; echo \"$dirty\"; fi"
           }
         ]
+      },
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "lavish-axi",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -n \"$SUPERSET_HOME_DIR\" ] && [ -x \"$SUPERSET_HOME_DIR/hooks/notify.sh\" ] && SUPERSET_AGENT_ID=claude \"$SUPERSET_HOME_DIR/hooks/notify.sh\" || true"
+          }
+        ]
       }
     ],
     "PreCompact": [
@@ -103,6 +131,68 @@
             "type": "command",
             "command": "cat | jq '{timestamp: now | todate, summary: .summary, files: .file_paths, decisions: .key_decisions}' >> ~/.claude/compaction-log.jsonl 2>/dev/null; exit 0",
             "async": true
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -n \"$SUPERSET_HOME_DIR\" ] && [ -x \"$SUPERSET_HOME_DIR/hooks/notify.sh\" ] && SUPERSET_AGENT_ID=claude \"$SUPERSET_HOME_DIR/hooks/notify.sh\" || true"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -n \"$SUPERSET_HOME_DIR\" ] && [ -x \"$SUPERSET_HOME_DIR/hooks/notify.sh\" ] && SUPERSET_AGENT_ID=claude \"$SUPERSET_HOME_DIR/hooks/notify.sh\" || true"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -n \"$SUPERSET_HOME_DIR\" ] && [ -x \"$SUPERSET_HOME_DIR/hooks/notify.sh\" ] && SUPERSET_AGENT_ID=claude \"$SUPERSET_HOME_DIR/hooks/notify.sh\" || true"
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -n \"$SUPERSET_HOME_DIR\" ] && [ -x \"$SUPERSET_HOME_DIR/hooks/notify.sh\" ] && SUPERSET_AGENT_ID=claude \"$SUPERSET_HOME_DIR/hooks/notify.sh\" || true"
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -n \"$SUPERSET_HOME_DIR\" ] && [ -x \"$SUPERSET_HOME_DIR/hooks/notify.sh\" ] && SUPERSET_AGENT_ID=claude \"$SUPERSET_HOME_DIR/hooks/notify.sh\" || true"
+          }
+        ]
+      }
+    ],
+    "StopFailure": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "[ -n \"$SUPERSET_HOME_DIR\" ] && [ -x \"$SUPERSET_HOME_DIR/hooks/notify.sh\" ] && SUPERSET_AGENT_ID=claude \"$SUPERSET_HOME_DIR/hooks/notify.sh\" || true"
           }
         ]
       }
@@ -124,10 +214,42 @@
     "pyright-lsp@claude-plugins-official": true,
     "coderabbit@claude-plugins-official": true,
     "clangd-lsp@claude-plugins-official": true,
-    "superpowers@claude-plugins-official": true
+    "superpowers@claude-plugins-official": true,
+    "semgrep@claude-plugins-official": true,
+    "claude-md-management@claude-plugins-official": true,
+    "ralph-loop@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "supabase@claude-plugins-official": true,
+    "vercel@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "railway@claude-plugins-official": true,
+    "ponytail@ponytail": true
+  },
+  "extraKnownMarketplaces": {
+    "ponytail": {
+      "source": {
+        "source": "github",
+        "repo": "DietrichGebert/ponytail"
+      }
+    }
   },
   "outputStyle": "Explanatory",
   "spinnerTipsEnabled": true,
   "alwaysThinkingEnabled": true,
+  "effortLevel": "high",
+  "ultracode": true,
+  "voice": {
+    "enabled": true,
+    "mode": "hold"
+  },
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark-daltonized",
+  "preferredNotifChannel": "iterm2_with_bell",
+  "inputNeededNotifEnabled": true,
+  "agentPushNotifEnabled": true,
+  "skipAutoPermissionPrompt": true,
   "voiceEnabled": true
 }
