@@ -3,6 +3,7 @@
 ## Structure
 - `.claude/` — Claude Code settings, hooks, and plugins
 - `.config/aerospace/` — AeroSpace window manager config
+- `.config/sketchybar/` — Sketchybar status bar, redrawn on AeroSpace workspace changes
 - `.config/git/` — Git configuration
 - `.config/nvim/` — Neovim configuration
 - `.zshrc` — Zsh shell config
@@ -19,5 +20,8 @@
 
 ## Conventions
 - Shell scripts must pass `shellcheck`
-- Claude Code settings live in `.claude/` (both repo-tracked and synced to `~/.claude/`)
+- `~/.claude` is a symlink to `.claude/` here — not a copy — so Claude Code writes all its
+  runtime state (caches, logs, daemon keys, session dirs) straight into this worktree
+- `.claude/` is gitignored deny-by-default. New files there stay invisible to git until you
+  add an explicit `!` un-ignore line in `.gitignore`
 - Neovim configs are managed via `scripts/nvim-switch.sh` with profile isolation
