@@ -16,6 +16,7 @@ help:
 	@echo "  nvim-current      - Show current nvim configuration"
 	@echo "  nvim-new NAME=x   - Create a new empty config 'x'"
 	@echo "  nvim-add NAME=x   - Save current nvim config as profile 'x'"
+	@echo "  git-clean-locks   - Remove stale .lock files from .git directories"
 	@echo "  open-gh           - Open GitHub repository"
 	@echo "  quartz-dev        - Start Quartz development server"
 	@echo "  tmpdir            - Create and navigate to temporary directory"
@@ -73,6 +74,11 @@ ifndef NAME
 else
 	@$(SCRIPTS_DIR)/nvim-switch.sh add $(NAME)
 endif
+
+# Remove stale .lock files from .git directories
+.PHONY: git-clean-locks
+git-clean-locks:
+	@$(SCRIPTS_DIR)/git-clean-locks.sh
 
 .PHONY: open-gh
 open-gh:
