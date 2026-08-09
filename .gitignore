@@ -1,33 +1,17 @@
 scripts/tutoring/students
 .env
 .config/nvim/todo.txt
-.claude/projects/*
-.claude/shell-snapshots/*
-.claude/statsig/*
-.claude/todos/*
-
-# Claude Code ephemeral/cache files
-.claude/backups/
-.claude/cache/
-.claude/chrome/
-.claude/compaction-log.jsonl
-.claude/debug/
-.claude/file-history/
-.claude/history.jsonl
-.claude/ide/
-.claude/paste-cache/
-.claude/plans/
-.claude/plugins/cache/
-.claude/plugins/install-counts-cache.json
-.claude/plugins/installed_plugins.json
-.claude/plugins/known_marketplaces.json
-.claude/plugins/marketplaces/
-.claude/security_warnings_state_*.json
-.claude/session-env/
-.claude/sessions/
-.claude/settings.local.json
-.claude/skills/.claude/
-.claude/stats-cache.json
-.claude/tasks/
-.claude/telemetry/
 personal-secrets/
+
+# ~/.claude is a symlink to this repo's .claude/, so all Claude Code runtime
+# state (daemon locks+keys, caches, logs, session/team dirs, a 260MB venv)
+# lands in the worktree. Deny by default; re-include only what's versioned.
+.claude/*
+!.claude/hooks/
+!.claude/scripts-misc/
+!.claude/settings.json
+!.claude/statusline-command.sh
+!.claude/plugins/
+.claude/plugins/*
+!.claude/plugins/blocklist.json
+!.claude/plugins/config.json
